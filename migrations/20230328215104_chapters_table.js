@@ -7,6 +7,7 @@ exports.up = function(knex) {
         table.increments('id').primary();
         table.string('name').notNullable();
         table.number('sections').notNullable();
+        table.boolean('available');
         table.boolean('completed');
         table.string('images')
     })

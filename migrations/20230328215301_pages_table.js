@@ -9,6 +9,7 @@ exports.up = function(knex) {
         table.string('title');
         table.string('class');
         table.text('content').notNullable();
+        table.text('transcript');
         table.boolean('can_save').notNullable();
         table.boolean('saved').defaultTo(false);
         table.string('images');
