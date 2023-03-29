@@ -7,7 +7,7 @@ exports.up = function(knex) {
     table.increments('id').primary();
     table.string('name').notNullable();
     table.string('images');
-    table.boolean('completed');
+    table.boolean('completed').defaultTo(false);
     table.number('chapters_id').unsigned().notNullable().references('id').inTable('chapters').onUpdate('CASCADE').onDelete('CASCADE')
     table.index('chapters_id')
   })

@@ -8,8 +8,8 @@
       table.string('name').notNullable();
       table.string('images');
       table.boolean('completed')
-      table.number('subsection_id').unsigned().notNullable().references('id').inTable('sub_sections').onUpdate('CASCADE').onDelete('CASCADE')
-      table.index('subsection_id')
+      table.number('section_id').unsigned().notNullable().references('id').inTable('sections').onUpdate('CASCADE').onDelete('CASCADE')
+      table.index('section_id')
     })
   };
   

@@ -1,7 +1,7 @@
-const chaptersData = require('../seed_data/users-data');
+const chaptersData = require('../seed_data/chapters-data');
 
 exports.seed = function (knex) {
-  return knex('users')
+  return knex('chapters')
     .del()
     .then(function () {
       return knex('users').insert(chaptersData);
