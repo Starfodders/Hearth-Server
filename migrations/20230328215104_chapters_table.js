@@ -17,6 +17,5 @@ exports.up = function(knex) {
  * @returns { Promise<void> }
  */
 exports.down = function(knex) {
-    return knex.schema.createTable('chapters', (table) => {
-    })
+    return knex.schema.dropTable('chapters')
 };

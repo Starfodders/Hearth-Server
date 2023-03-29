@@ -13,8 +13,8 @@ exports.up = function(knex) {
         table.boolean('saved').defaultTo(false);
         table.string('images');
         table.string('links');
-        table.number('chapter_id').unsigned().notNullable().references('id').inTable('chapters').onUpdate('CASCADE').onDelete('CASCADE');
-        table.index('chapter_id')
+        table.number('units_id').unsigned().notNullable().references('id').inTable('units').onUpdate('CASCADE').onDelete('CASCADE');
+        table.index('units_id')
     })
 };
 
@@ -23,6 +23,5 @@ exports.up = function(knex) {
  * @returns { Promise<void> }
  */
 exports.down = function(knex) {
-    return knex.schema.createTable('pages', (table) => {
-    })
+    return knex.schema.dropTable('pages')
 };
