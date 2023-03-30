@@ -8,7 +8,7 @@ module.exports = [
         transcript: null,
         can_save: true,
         images: null,
-        units_id: 1
+        unit_id: 1
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ module.exports = [
         transcript: null,
         can_save: true,
         images: null,
-        units_id: 1
+        unit_id: 1
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ module.exports = [
         transcript: null,
         can_save: true,
         images: null,
-        units_id: 1
+        unit_id: 1
     },
     {
         id: 4,
@@ -41,7 +41,7 @@ module.exports = [
         transcript: null,
         can_save: true,
         images: null,
-        units_id: 1
+        unit_id: 1
     },
     {
         id: 5,
@@ -52,7 +52,7 @@ module.exports = [
         transcript: null,
         can_save: true,
         images: null,
-        units_id: 1
+        unit_id: 1
     },
     {
         id: 6,
@@ -63,7 +63,7 @@ module.exports = [
         transcript: null,
         can_save: false,
         images: null,
-        units_id: 2
+        unit_id: 2
     },
     {
         id: 7,
@@ -74,7 +74,7 @@ module.exports = [
         transcript: null,
         can_save: false,
         images: null,
-        units_id: 2
+        unit_id: 2
     },
     {
         id: 8,
@@ -85,7 +85,7 @@ module.exports = [
         transcript: null,
         can_save: true,
         images: null,
-        units_id: 2
+        unit_id: 2
     },
     {
         id: 9,
@@ -96,7 +96,7 @@ module.exports = [
         transcript: null,
         can_save: true,
         images: null,
-        units_id: 2
+        unit_id: 2
     },
     {
         id: 10,
@@ -107,7 +107,7 @@ module.exports = [
         transcript: null,
         can_save: false,
         images: null,
-        units_id: 2
+        unit_id: 2
     }
 ]
 
@@ -120,5 +120,5 @@ module.exports = [
 //     transcript: null,
 //     can_save: false,
 //     images: '/public/images/talStand.png',
-//     units_id: 3
+//     unit_id: 3
 // }

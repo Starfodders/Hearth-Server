@@ -9,7 +9,7 @@
       table.string('email').notNullable();
       table.string('password').notNullable();
       table.integer('progress').notNullable().defaultTo(0);
-      table.timestamp('created').notNullable();
+      table.timestamps(true, true);
       table.integer('times_meditate');
       table.float('elapsed_meditate_time');
     })
