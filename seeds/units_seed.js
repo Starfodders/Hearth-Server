@@ -4,6 +4,6 @@ exports.seed = function (knex) {
   return knex('units')
     .del()
     .then(function () {
-      return knex('users').insert(unitsData);
+      return knex('units').insert(unitsData);
     })
 };
