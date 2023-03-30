@@ -1,4 +1,4 @@
-const knex = require("knex")(require("../../knexfile"));
+const knex = require("knex")(require("../knexfile"));
 const jwt = require("jsonwebtoken");
 
 exports.signup = async (req, res) => {
@@ -18,7 +18,7 @@ exports.signup = async (req, res) => {
 
   try {
     const checkUserExist = await knex("users").where({ email: email });
-
+    
     if (checkUserExist.length > 0) {
       res.status(404).json({ message: `User Already Exists At ${email}` });
     } else {
@@ -48,12 +48,19 @@ exports.login = async (req, res) => {
   }
 
   try {
+    //first checks if email exists
     const getUserCreds = await knex('users').where({email: email});
     if (getUserCreds.length === 0) {
         return res.status(404).json({message: 'User not found'})
     }
+    //now check found user's password against input
     const user = getUserCreds[0]
-    return res.status(200).json(user)
+    if (password !== user.password) {
+      return res.status(400).json({message: 'Incorrect password'})
+    }
+    //if all matches, send back token
+    let token = jwt.sign(email, 'secretKey')
+    return res.json({token: token})
   }
   catch(error) {
     console.log(error);
