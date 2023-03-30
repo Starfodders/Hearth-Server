@@ -3,15 +3,19 @@ const app = express();
 const cors = require('cors');
 require('dotenv').config();
 
-
 const PORT = process.env.PORT;
 const CLIENT_URL = process.env.CLIENT_URL;
+
+const userRoutes = require('./routes/userRoute')
+
 
 app.use(cors(
     { origin: CLIENT_URL }
 ));
 app.use(express.json())
 app.use(express.static('public'))
+
+app.use('/users', userRoutes)
 
 
 app.listen(PORT, () => {
