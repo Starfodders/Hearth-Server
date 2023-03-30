@@ -17,9 +17,9 @@ exports.signup = async (req, res) => {
   };
 
   try {
-    const checkUser = await knex("users").where({ email: email });
+    const checkUserExist = await knex("users").where({ email: email });
 
-    if (checkUser.length > 0) {
+    if (checkUserExist.length > 0) {
       res.status(404).json({ message: `User Already Exists At ${email}` });
     } else {
       knex("users")
@@ -36,14 +36,26 @@ exports.signup = async (req, res) => {
         });
     }
   } catch (err) {
-    console.log(err + 'hello');
+    console.log(err);
   }
 };
 
-exports.login = (req, res) => {
+exports.login = async (req, res) => {
   const { email, password } = req.body;
 
   if (!email || !password) {
-    res.status(400).send("Please fill in all fields");
+    res.status(400).json({message: "Missing data from input fields"});
+  }
+
+  try {
+    const getUserCreds = await knex('users').where({email: email});
+    if (getUserCreds.length === 0) {
+        return res.status(404).json({message: 'User not found'})
+    }
+    const user = getUserCreds[0]
+    return res.status(200).json(user)
+  }
+  catch(error) {
+    console.log(error);
   }
 };
