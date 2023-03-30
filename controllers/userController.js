@@ -13,13 +13,17 @@ exports.signup = (req, res) => {
         password
     }
 
+    //inserts new user into DB, then returns the new user data to client for log in
     knex('users')
     .insert(newUser)
     .then((data) => {
-        console.log(data);
-        res.status(200)
+        knex('users')
+        .where({'users.id': data[0]})
+        .then((data => {
+            res.status(200).json(data)
+        }))
     })
     .catch((error) => {
-        console.log(error);
+        res.status(500).send(error + 'Error while creating new user')
     })
 }
