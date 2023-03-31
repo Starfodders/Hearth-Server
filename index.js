@@ -7,6 +7,7 @@ const PORT = process.env.PORT;
 const CLIENT_URL = process.env.CLIENT_URL;
 
 const userRoutes = require('./routes/userRoute')
+const chapterRoutes = require('./routes/chapterRoute')
 
 
 app.use(cors(
@@ -16,6 +17,7 @@ app.use(express.json())
 app.use(express.static('public'))
 
 app.use('/users', userRoutes)
+app.use('/chapters', chapterRoutes)
 
 
 app.listen(PORT, () => {
