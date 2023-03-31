@@ -18,7 +18,7 @@ exports.signup = async (req, res) => {
 
   try {
     const checkUserExist = await knex("users").where({ email: email });
-    
+
     if (checkUserExist.length > 0) {
       res.status(404).json({ message: `User Already Exists At ${email}` });
     } else {
@@ -60,7 +60,7 @@ exports.login = async (req, res) => {
     }
     //if all matches, send back token
     let token = jwt.sign(email, 'secretKey')
-    return res.json({token: token})
+    return res.status(200).json({token: token})
   }
   catch(error) {
     console.log(error);
