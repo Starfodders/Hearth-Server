@@ -5,7 +5,7 @@ module.exports = [
     sections: 2,
     available: true,
     completed: false,
-    images: "/public/images/introbag.png",
+    images: "/images/introbag.png",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ module.exports = [
     sections: 2,
     available: true,
     completed: false,
-    images: "/public/images/tal1.png",
+    images: "/images/tal1.png",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ module.exports = [
     sections: 2,
     available: false,
     completed: false,
-    images: "/public/images/mana1.png",
+    images: "/images/mana1.png",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ module.exports = [
     sections: 2,
     available: false,
     completed: false,
-    images: "/public/images/edo1.png",
+    images: "/images/edo1.png",
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ module.exports = [
     sections: 2,
     available: false,
     completed: false,
-    images: "/public/images/igoRok1.png",
+    images: "/images/igoRok1.png",
   },
   {
     id: 6,
@@ -45,6 +45,6 @@ module.exports = [
     sections: 2,
     available: false,
     completed: false,
-    images: "/public/images/allfour.png",
+    images: "/images/allfour.png",
   },
 ];

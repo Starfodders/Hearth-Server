@@ -4,5 +4,6 @@ const knex = require('knex')(require('../knexfile'));
 const chapterController = require('../controllers/chapterController')
 
 router.route('/').get(chapterController.getChapters)
+router.route('/:id').get(chapterController.getSections)
 
 module.exports = router
