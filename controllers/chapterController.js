@@ -20,3 +20,13 @@ exports.getSections = async (req, res) => {
         res.status(404).json({message: 'No section found with that id'})
     })
 }
+
+exports.getUnits = async(req, res) => {
+    await knex('units').select('*').where({section_id: req.params.UnitId})
+    .then((data) => {
+        res.status(200).json(data)
+    })
+    .catch((error) => {
+        res.status(404).json({message: 'No unit found with that id'})
+    })
+}
