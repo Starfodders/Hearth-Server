@@ -108,7 +108,43 @@ module.exports = [
         can_save: false,
         images: null,
         unit_id: 2
-    }
+    },
+    {
+        id: 11,
+        page_number: 11,
+        title: 'null',
+        class: 'special',
+        content: "Tal will join you as you progress through your first journey and learn about Distress Tolerance. This is Tal’s first trip to the Hearth. Although they’re scared, you and Tal will both discover insights into handling stressful situations.",
+        transcript: null,
+        can_save: false,
+        images: '/images/talPrompt.png',
+        unit_id: 3
+    },
+    {
+        id: 12,
+        page_number: 12,
+        title: 'null',
+        class: 'list',
+        content: "Tal will join you as you progress through your first journey and learn about Distress Tolerance. This is Tal’s first trip to the Hearth. Although they’re scared, you and Tal will both discover insights into handling stressful situations.",
+        transcript: null,
+        can_save: false,
+        images: null,
+        unit_id: 3
+    },
+    {
+        id: 13,
+        page_number: 13,
+        title: 'null',
+        class: 'list',
+        content: "Chores are well, a chore to deal with. However it is easy to fall behind on tasks when preoccupied with stress. Setting aside time to perform tasks and chores creates tiny accomplishments that are relatively simple and accessible to distract yourself. Tal has some ideas for you!",
+        transcript: null,
+        list: "Wash the dishes, Make phone calls to people you haven’t spoken to recently but not someone you’re angry with, Clean your room or house or go help a friend with their cleaning or gardening project, Clean out your closet and donate your old clothes, Redecorate a room or at least the walls",
+        can_save: false,
+        images: 'images/talPrompt.png',
+        unit_id: 3
+    },
+    
+
 ]
 
 // {

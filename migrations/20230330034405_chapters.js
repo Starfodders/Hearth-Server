@@ -41,15 +41,16 @@ exports.up = function (knex) {
     .createTable("pages", (table) => {
       table.increments("id").primary();
       table.integer("page_number").notNullable();
-      table.string("title");
-      table.string("class");
+      table.string("title").defaultTo(null)
+      table.string("class").defaultTo('text');
       table.text("content").notNullable();
-      table.text("transcript");
+      table.text("transcript").defaultTo(null)
+      table.text("list", "mediumtext").defaultTo(null)
       table.boolean("seen").defaultTo(false);
       table.boolean("can_save").notNullable();
       table.boolean("saved").defaultTo(false);
-      table.string("images");
-      table.string("links");
+      table.string("images").defaultTo(null);
+      table.string("links").defaultTo(null);
       table
         .integer("unit_id")
         .unsigned()
