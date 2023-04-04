@@ -1,4 +1,3 @@
-const safePlaceData = require('../transcript__data/safeplace.json')
 
 module.exports = [
     {
@@ -128,7 +127,7 @@ module.exports = [
         title: 'Safe Place Visualization',
         type: 'technique',
         content: "You can trick your body into relaxing by visualizing a safe place. Consider a location, real or imaginary, that makes you feel safe and relaxed. Focus on this scene and follow the steps below. Or choose to move onto a new technique ahead.",
-        transcript: safePlaceData[0],
+        transcript: true,
         can_save: false,
         images: null,
         unit_id: 3
@@ -142,7 +141,7 @@ module.exports = [
         transcript: null,
         list: "Wash the dishes, Make phone calls to people you haven’t spoken to recently but not someone you’re angry with, Clean your room or house or go help a friend with their cleaning or gardening project, Clean out your closet and donate your old clothes, Redecorate a room or at least the walls",
         can_save: true,
-        images: 'images/talPrompt.png',
+        images: 'talPrompt',
         unit_id: 3
     },
     

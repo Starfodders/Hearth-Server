@@ -12,7 +12,8 @@
       "p8": "Last, use your imaginary sense of taste. Are you eating or drinking anything in this scene? Choose something soothing to taste. Then take a few seconds to use your imaginary sense of taste.",
       "p9": "Now take a few more seconds to explore your safe place using all of your imaginary senses. Recognize how safe and relaxed you feel here. Remember that you can come back to this place in your imagination whenever you need to feel safe and relaxed. You can also come back whenever you’re feeling sad, angry, restless, or in pain. Look around one last time to remember what it looks like.",
       "p10": "Now keep your eyes closed and return your focus to your breathing. Again, take some slow, long breaths in through your nose and exhale through your mouth. Then, when you feel ready, open your eyes and return your focus to the room."
-    }
+    },
+    "audio": "/audio/safeplaceAudio.mp3"
   },
   {
     "id": "13",
