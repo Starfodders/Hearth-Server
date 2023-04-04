@@ -12,13 +12,13 @@ exports.getUnit = async (req, res) => {
 
 exports.getTranscript = async (req, res) => {
     //when given a specific unit ID and page num from front end, send back the transcript data
-    const transcriptLocation = `unit${req.params.unitID}`; 
+    const transcriptLocation = `unit${req.params.id}`; 
     const transcriptData = require(`../transcript__data/${transcriptLocation}.json`);
     const transcriptSpecific = transcriptData.find(jsonData => jsonData.id === req.params.pageNum); 
         
     // console.log(transcriptSpecific);
     if (!transcriptSpecific) {
-        res.status(404).json({message: `No transcript found at unit Id : ${unitID} or page number : ${pageNum}`})
+        res.status(404).json({message: `No transcript found at unit Id : ${req.params.id} or page number : ${req.params.pageNum}`})
     }
     res.status(200).json(transcriptSpecific);
 }
