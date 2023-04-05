@@ -58,9 +58,18 @@ exports.login = async (req, res) => {
     if (password !== user.password) {
       return res.status(400).json({message: 'Incorrect password'})
     }
-    //if all matches, send back token
-    let token = jwt.sign(email, 'secretKey')
-    return res.status(200).json({token: token})
+    //if all matches, get their given name send back token + name as a claim
+    const getName = await knex('users').where({email: email})
+    if (getName) {
+      const givenName = getName[0].given_name
+      let token = jwt.sign({name : givenName}, 'secretKey')
+      return res.status(200).json({token: token})
+
+    } else {
+      let token = jwt.sign({name: "Guest"}, 'secretKey')
+      return res.status(200).json({token: token})
+
+    }
   }
   catch(error) {
     console.log(error);
