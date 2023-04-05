@@ -9,6 +9,7 @@ const CLIENT_URL = process.env.CLIENT_URL;
 const userRoutes = require('./routes/userRoute')
 const chapterRoutes = require('./routes/chapterRoute')
 const unitRoutes = require('./routes/unitRoute')
+const collectionRoutes = require('./routes/collectionRoute')
 
 
 app.use(cors(
@@ -20,6 +21,7 @@ app.use(express.static('public'))
 app.use('/users', userRoutes)
 app.use('/chapters', chapterRoutes)
 app.use('/units', unitRoutes)
+app.use('/collections', collectionRoutes)
 
 
 app.listen(PORT, () => {

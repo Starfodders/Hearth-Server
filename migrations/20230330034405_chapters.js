@@ -48,7 +48,6 @@ exports.up = function (knex) {
       table.text("list", "mediumtext").defaultTo(null)
       table.boolean("seen").defaultTo(false);
       table.boolean("can_save").notNullable();
-      table.boolean("saved").defaultTo(false);
       table.string("images").defaultTo(null);
       table.string("links").defaultTo(null);
       table
