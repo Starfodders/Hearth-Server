@@ -13,6 +13,7 @@ exports.up = function (knex) {
       table.string("name").notNullable();
       table.string("images");
       table.boolean("completed").defaultTo(false);
+      table.boolean("available");
       table
         .integer("chapter_id")
         .unsigned()
@@ -27,6 +28,7 @@ exports.up = function (knex) {
       table.increments("id").primary();
       table.string("name").notNullable();
       table.string("images");
+      table.boolean("available");
       table.boolean("completed");
       table
         .integer("section_id")

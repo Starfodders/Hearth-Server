@@ -22,3 +22,17 @@ exports.getTranscript = async (req, res) => {
     }
     res.status(200).json(transcriptSpecific);
 }
+
+exports.savePage = async (req, res) => {
+    const newSaved = {
+        pages_id: req.params.pageID,
+        user_id : req.params.userID
+    }
+    await knex('saved').insert(newSaved)
+    .then((data) => {
+        res.status(200).json({message: "Page Saved Successfully"})
+    })
+    .catch((error) => {
+        res.status(400).json({message: error + "Unable to save page"})
+    })
+}
