@@ -62,7 +62,8 @@ exports.login = async (req, res) => {
     const getName = await knex('users').where({email: email})
     if (getName) {
       const givenName = getName[0].given_name
-      let token = jwt.sign({name : givenName}, 'secretKey')
+      const userId = getName[0].id
+      let token = jwt.sign({name : givenName, id: userId}, 'secretKey')
       return res.status(200).json({token: token})
 
     } else {
