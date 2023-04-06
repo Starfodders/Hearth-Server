@@ -7,6 +7,7 @@ router.route('/:id').get(unitController.getUnit)
 router.route('/:id/:pageNum').get(unitController.getTranscript)
 
 router.route('/:userID/:pageID').post(unitController.savePage)
+router.route('/:userID/:pageID').delete(unitController.delSavedPage)
 
 
 module.exports = router
