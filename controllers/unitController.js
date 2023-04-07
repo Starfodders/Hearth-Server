@@ -52,9 +52,9 @@ exports.savePage = async (req, res) => {
 exports.delSavedPage = async (req, res) => {
     await knex("saved")
     .where({ pages_id: req.params.pageID, user_id: req.params.userID })
-    .delete()
+    .del()
     .then((data) => {
-      res.status(200).json({ message: "Page removed from saved" });
+      res.status(204).json({ message: "Page removed from saved" });
     })
     .catch((error) => {
       res.status(404).json({ message: "Page not found" });
