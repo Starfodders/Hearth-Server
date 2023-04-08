@@ -12,12 +12,6 @@ exports.seed = function (knex) {
       return knex('chapters').insert(chaptersData);
     })
     .then(() => {
-      return knex('users').del()
-    })
-    .then(() => {
-      return knex('users').insert(userData)
-    })
-    .then(() => {
       return knex('sections').del()
     })
     .then(() => {
@@ -34,6 +28,12 @@ exports.seed = function (knex) {
     })
     .then(() => {
       return knex('pages').insert(pagesData)
+    })
+    .then(() => {
+      return knex('users').del()
+    })
+    .then(() => {
+      return knex('users').insert(userData)
     })
     .then(() => {
       return knex('saved').del()
