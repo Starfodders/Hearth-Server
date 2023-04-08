@@ -7,11 +7,9 @@ exports.getUnit = async (req, res) => {
       res.status(200).json(data);
     })
     .catch((err) => {
-      res
-        .status(404)
-        .json({
-          message: `No pages found for units with id ${req.params.id}` + err,
-        });
+      res.status(404).json({
+        message: `No pages found for units with id ${req.params.id}` + err,
+      });
     });
 };
 
@@ -25,13 +23,17 @@ exports.getTranscript = async (req, res) => {
 
   // console.log(transcriptSpecific);
   if (!transcriptSpecific) {
-    res
-      .status(404)
-      .json({
-        message: `No transcript found at unit Id : ${req.params.id} or page number : ${req.params.pageNum}`,
-      });
+    res.status(404).json({
+      message: `No transcript found at unit Id : ${req.params.id} or page number : ${req.params.pageNum}`,
+    });
   }
   res.status(200).json(transcriptSpecific);
+};
+
+exports.getCloser = async (req, res) => {
+  const closerLocation = `section${req.params.id}`
+  const closerData = require(`../closing-card__data/${closerLocation}.json`)
+  res.status(200).json(closerData[0])
 };
 
 exports.savePage = async (req, res) => {
@@ -50,7 +52,7 @@ exports.savePage = async (req, res) => {
 };
 
 exports.delSavedPage = async (req, res) => {
-    await knex("saved")
+  await knex("saved")
     .where({ pages_id: req.params.pageID, user_id: req.params.userID })
     .del()
     .then((data) => {
