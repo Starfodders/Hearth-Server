@@ -3,10 +3,10 @@ exports.up = function (knex) {
     .createTable("chapters", (table) => {
       table.increments("id").primary();
       table.string("name").notNullable();
-      table.integer("sections").notNullable();
+      table.integer("units")
+      table.integer("units__done").defaultTo(0);
       table.boolean("overall_available");
       table.boolean('available').defaultTo(false)
-      table.boolean("completed");
       table.string("images");
     })
     .createTable("sections", (table) => {

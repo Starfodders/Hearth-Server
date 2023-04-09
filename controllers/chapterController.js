@@ -21,6 +21,7 @@ exports.getChapters = async (req, res) => {
     });
 };
 
+
 exports.getSections = async (req, res) => {
   await knex("sections")
     .select("*")
