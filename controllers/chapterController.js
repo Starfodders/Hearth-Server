@@ -12,7 +12,7 @@ exports.getChapters = async (req, res) => {
             if (chapter.id <= userAccess.chapter) {
               chapter.available = 1;
             }
-          });
+          })      
           res.status(200).json(chapterList);
         });
     })

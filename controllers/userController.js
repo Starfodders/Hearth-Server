@@ -77,11 +77,21 @@ exports.login = async (req, res) => {
 exports.getProgress = async (req, res) => {
   try {
     const user = await knex('users').where({id: req.params.userID}).first();
-    const userProgress = {
-      current: user.current_progress,
-      unit: user.unit
-    }
-    return res.status(200).json({userProgress})
+    knex('units').select('sections.chapter_id as chapter_id', knex.raw('count(*) as units_complete'))
+    .join('sections', 'units.section_id', '=', 'sections.id')
+    .where('sections.chapter_id', '<=', user.chapter)
+    .where('units.id', '<=', user.current_progress)
+    .groupBy('sections.chapter_id')
+    .then((completedData) => {
+      const userProgress = {
+        current: user.current_progress,
+        unit: user.unit,
+        completed: completedData
+      }
+      return res.status(200).json({userProgress})
+
+    })
+    
   }
   catch(err) {
     res.status(404).json({message: 'Cannot find user'})
@@ -114,18 +124,3 @@ exports.update = async (req, res) => {
   }
 };
 
-//add a property to the chapters table for units done which is equal to user 'UNIT' prop for that specific chapter
-//i will have access to total # of units per chapter in SEED data which I can pass down to ProgressBar
-//for the current one, I need specific info for the number of units that user has completed per chapter
-//knex query to get all units under chapter X. Join?
-//knex units where id <= user.unit prop (returns all units that match this)
-//Now I have to sort them based on their section ID. 
-
-// exports.getCompleted = async (req, res) => {
-//   const userID = 1;
-//   knex('users')
-//   .join("units", "users.id", "=", "units.user_id")
-//   .join("sections", "units.section_id", "=", "sections.id")
-//   .join("chapters", "sections.chapter_id", "=", "chapters.id")
-
-// }
