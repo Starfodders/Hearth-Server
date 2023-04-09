@@ -77,23 +77,24 @@ exports.login = async (req, res) => {
 exports.getProgress = async (req, res) => {
   try {
     const user = await knex('users').where({id: req.params.userID}).first();
-    knex('units').select('sections.chapter_id as chapter_id', knex.raw('count(*) as units_complete'))
-    .join('sections', 'units.section_id', '=', 'sections.id')
-    .where('sections.chapter_id', '<=', user.chapter)
-    .where('units.id', '<=', user.current_progress)
-    .groupBy('sections.chapter_id')
-    .then((completedData) => {
-      const userProgress = {
-        current: user.current_progress,
-        unit: user.unit,
-        completed: completedData
-      }
-      return res.status(200).json({userProgress})
-
-    })
-    
-  }
-  catch(err) {
+    const completedChapters = await knex('units')
+      .select('sections.chapter_id', knex.raw('count(*) as units_complete'))
+      .join('sections', 'units.section_id', '=', 'sections.id')
+      .where('sections.chapter_id', '<=', user.chapter)
+      .where('units.id', '<=', user.current_progress)
+      .groupBy('sections.chapter_id')
+    const completedSections = await knex('units')
+      .select('units.section_id', knex.raw('count(*) as units_complete'))
+      .where('units.id', '<=', user.current_progress)
+      .groupBy('units.section_id')
+    const userProgress = {
+      current: user.current_progress,
+      unit: user.unit,
+      completedChapters,
+      completedSections
+    }
+    return res.status(200).json({userProgress})
+  } catch(err) {
     res.status(404).json({message: 'Cannot find user'})
   }
 }

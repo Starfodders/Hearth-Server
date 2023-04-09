@@ -4,6 +4,7 @@ module.exports = [
         name: 'Introduction I',
         images: '/images/introbag.png',
         available: true,
+        units: 1,
         chapter_id: 1
     },
     {
@@ -11,6 +12,7 @@ module.exports = [
         name: 'Introduction II',
         images: '/images/introbag.png',
         available: false,
+        units: 1,
         chapter_id: 1
     },
     {
@@ -18,6 +20,7 @@ module.exports = [
         name: 'Basic Distress Tolerance',
         images: '/images/tal1.png',
         available: false,
+        units: 4,
         chapter_id: 2
     },
     {
@@ -25,6 +28,7 @@ module.exports = [
         name: 'Advanced Distress Tolerance',
         images: '/images/tal2.png',
         available: false,
+        units: 4,
         chapter_id: 2
     }
 ]

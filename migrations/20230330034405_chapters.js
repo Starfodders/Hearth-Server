@@ -14,6 +14,7 @@ exports.up = function (knex) {
       table.string("name").notNullable();
       table.string("images");
       table.boolean("completed").defaultTo(false);
+      table.integer("units").defaultTo(0)
       table.boolean("available");
       table
         .integer("chapter_id")
