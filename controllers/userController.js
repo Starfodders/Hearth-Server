@@ -44,35 +44,53 @@ exports.login = async (req, res) => {
   const { email, password } = req.body;
 
   if (!email || !password) {
-    res.status(400).json({message: "Missing data from input fields"});
+    res.status(400).json({ message: "Missing data from input fields" });
   }
 
   try {
     //first checks if email exists
-    const getUserCreds = await knex('users').where({email: email});
+    const getUserCreds = await knex("users").where({ email: email });
     if (getUserCreds.length === 0) {
-        return res.status(404).json({message: 'User not found'})
+      return res.status(404).json({ message: "User not found" });
     }
     //now check found user's password against input
-    const user = getUserCreds[0]
+    const user = getUserCreds[0];
     if (password !== user.password) {
-      return res.status(400).json({message: 'Incorrect password'})
+      return res.status(400).json({ message: "Incorrect password" });
     }
     //if all matches, get their given name send back token + name as a claim
-    const getName = await knex('users').where({email: email})
+    const getName = await knex("users").where({ email: email });
     if (getName) {
-      const givenName = getName[0].given_name
-      const userId = getName[0].id
-      let token = jwt.sign({name : givenName, id: userId}, 'secretKey')
-      return res.status(200).json({token: token})
-
+      const givenName = getName[0].given_name;
+      const userId = getName[0].id;
+      let token = jwt.sign({ name: givenName, id: userId }, "secretKey");
+      return res.status(200).json({ token: token });
     } else {
-      let token = jwt.sign({name: "Guest"}, 'secretKey')
-      return res.status(200).json({token: token})
-
+      let token = jwt.sign({ name: "Guest" }, "secretKey");
+      return res.status(200).json({ token: token });
     }
-  }
-  catch(error) {
+  } catch (error) {
     console.log(error);
+  }
+};
+
+exports.update = async (req, res) => {
+  const { userID, unitID } = req.params;
+  const updateUnit = parseInt(unitID) + 1;
+  try {
+    const getSection = await knex("units").where({ id: updateUnit }).first();
+    const sectionID = getSection.section_id;
+
+    const getChapter = await knex("sections").where({ id: sectionID }).first();
+    const chapterID = getChapter.chapter_id;
+
+    const updatedUser = await knex("users")
+      .where({ id: userID })
+      .update({ current_progress: unitID, unit: updateUnit, section: sectionID, chapter: chapterID });
+    return res.status(200).json(updatedUser);
+  } catch (error) {
+    return res
+      .status(404)
+      .json({ message: `Cannot find user at id ${userID}` });
   }
 };
