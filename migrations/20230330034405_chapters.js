@@ -48,7 +48,8 @@ exports.up = function (knex) {
       table.string("title").defaultTo(null)
       table.string("type").defaultTo('text');
       table.text("content").notNullable();
-      table.text("transcript", "mediumtext").defaultTo(null)
+      table.text("transcript", "mediumtext").defaultTo(null);
+      table.boolean('audio').defaultTo(false);
       table.text("list", "mediumtext").defaultTo(null)
       table.boolean("seen").defaultTo(false);
       table.boolean("can_save").notNullable();

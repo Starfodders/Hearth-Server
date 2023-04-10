@@ -404,6 +404,7 @@ module.exports = [
         content: "You can trick your body into relaxing by visualizing a safe place. Consider a location, real or imaginary, that makes you feel safe and relaxed. Focus on this scene and follow the steps below.;Or choose to move onto a new technique ahead.",
         can_save: true,
         transcript: true,
+        audio: true,
         unit_id: 7
     },
     {
