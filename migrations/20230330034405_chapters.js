@@ -71,6 +71,7 @@ exports.up = function (knex) {
       table.string("password").notNullable();
       table.integer("overall_progress").notNullable().defaultTo(0);
       table.timestamps(true, true);
+      table.boolean('newbie').defaultTo(true);
       table.integer("units_done").defaultTo(0);
       table.integer("times_meditate").defaultTo(0);
       table.float("elapsed_meditate_time").defaultTo(0);

@@ -386,31 +386,36 @@ module.exports = [
         content: "Now it's time to create a relaxation plan that takes into account your five senses and the ways in which you can engage them to provide comfort. Keep this list with your distraction plan.;Also, think about an alternative plan for when you're away from home. What resources are available to you in that situation?",
         can_save: true,
         unit_id: 6
+    },
+    {
+        id: 40,
+        page_number: 40,
+        title: 'Introduction to Techniques',
+        type: 'text',
+        content: "Congratulations on reaching this chapter! Here, we will be utilizing advanced distress tolerance skills while keeping in mind that our initial step is to use R.E.S.T.;Throughout this chapter, we will introduce several techniques. Read over the summary, choose which ones sound interesting, and save them for use later!;It is recommended you engage in these techniques in a quiet, comfortable place that is free from distractions such as phones and TV. Let those in your space and home know that you’ll be taking time for yourself for the next 10-20 minutes.",
+        can_save: true,
+        unit_id: 7
+    },
+    {
+        id: 41,
+        page_number: 41,
+        title: 'Safe Place Visualization',
+        type: 'technique',
+        content: "You can trick your body into relaxing by visualizing a safe place. Consider a location, real or imaginary, that makes you feel safe and relaxed. Focus on this scene and follow the steps below.;Or choose to move onto a new technique ahead.",
+        can_save: true,
+        transcript: true,
+        unit_id: 7
+    },
+    {
+        id: 42,
+        page_number: 42,
+        title: 'Cue Controlled Relaxation',
+        type: 'technique',
+        content: "Cues are triggers or commands that prompt you to relax. Through habitual training, the cue word will help your body relax in response to the cue, releasing tension. What would your cue word be?;Try to practice this twice a day for consistent results. Follow the steps below.",
+        can_save: true,
+        transcript: true,
+        unit_id: 7
     }
 ]
     
-
-
-    
-
-
-
-
-
-
-
-
-//     {
-//         id: 11,
-//         page_number: 11,
-//         title: 'Safe Place Visualization',
-//         type: 'technique',
-//         content: "You can trick your body into relaxing by visualizing a safe place. Consider a location, real or imaginary, that makes you feel safe and relaxed. Focus on this scene and follow the steps below. Or choose to move onto a new technique ahead.",
-//         transcript: true,
-//         can_save: false,
-//         images: null,
-//         unit_id: 3
-// //     },
-
-// ]
 

@@ -74,6 +74,28 @@ exports.login = async (req, res) => {
   }
 };
 
+exports.checkNew = async(req, res) => {
+  try {
+    const user = await knex('users').where({id: req.params.userID}).first()
+    return res.status(200).json({isNew: user.newbie})
+  }
+  catch(err) {
+    console.log(err);
+    res.status(404).json({message: "No user found"})
+  }
+}
+
+exports.patchNew = async (req, res) => {
+  try {
+    const user = await knex('users').where({id: req.params.userID}).first().update({newbie: false})
+    return res.status(200).json(user)
+  }
+  catch(err) {
+    console.log(err);
+    res.status(404).json({message: "No user found"})
+  }
+}
+
 exports.getProgress = async (req, res) => {
   try {
     const user = await knex('users').where({id: req.params.userID}).first();
