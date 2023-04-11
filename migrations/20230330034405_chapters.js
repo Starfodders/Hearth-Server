@@ -14,6 +14,7 @@ exports.up = function (knex) {
       table.string("name").notNullable();
       table.string("images");
       table.boolean("completed").defaultTo(false);
+      table.string('title');
       table.integer("units").defaultTo(0)
       table.boolean("available");
       table
@@ -30,6 +31,7 @@ exports.up = function (knex) {
       table.increments("id").primary();
       table.string("name").notNullable();
       table.string("images");
+      table.string('title')
       table.boolean("available");
       table.boolean("completed");
       table
