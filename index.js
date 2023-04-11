@@ -10,6 +10,7 @@ const userRoutes = require('./routes/userRoute')
 const chapterRoutes = require('./routes/chapterRoute')
 const unitRoutes = require('./routes/unitRoute')
 const collectionRoutes = require('./routes/collectionRoute')
+const meditateRoutes = require('./routes/meditateRoute')
 
 
 app.use(cors(
@@ -22,6 +23,9 @@ app.use('/users', userRoutes)
 app.use('/chapters', chapterRoutes)
 app.use('/units', unitRoutes)
 app.use('/collections', collectionRoutes)
+app.use('/meditate', meditateRoutes)
+
+
 
 
 app.listen(PORT, () => {
