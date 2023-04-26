@@ -416,6 +416,108 @@ module.exports = [
         can_save: true,
         transcript: true,
         unit_id: 7
+    },
+    {
+        id: 43,
+        page_number: 43,
+        title: 'Rediscover Your Values',
+        type: 'technique',
+        content: "What is important to you in life? It's easy to forget the things that give our lives meaning and importance. By remembering and rediscovering your values, you can better tolerate overwhelming situations. This Valued Living Questionnaire is a checklist to separate the different components of your life. Completing it the first time, answer each row based on their important to you ideally. For example, if you value self-care greatly, you can rate it higher such as a 10.;Then during your second time completing this questionnaire, answer based on the actual time and effort you put towards each aspect of your life. Compare the two results. If there is a great difference between your ideal value versus your actual committment, this may indicate you need to reprioritize your time and effort.",
+        can_save: true,
+        transcript: false,
+        unit_id: 7
+    },
+    {
+        id: 44,
+        page_number: 44,
+        title: 'Committed Action',
+        type: 'technique',
+        content: "This is an expansion on the previous technique 'Valued Living Questionnaire', where we develop intentions to create a more fulfilling life. Referencing the results of your questionnaire, identify components that you value but do not put enough effort into.;Then identify an intention to improve the quality of each component. For example, if you value education then set an intention to take a class or go back to school.;Then identify several specific actions that will move you towards your intention. The goal is to fill your life with meaningful activity thats based on personally identified motives.",
+        can_save: true,
+        transcript: false,
+        unit_id: 7
+    },
+    {
+        id: 45,
+        page_number: 45,
+        title: 'Cognitive Rehearsal',
+        type: 'summary',
+        content: "Mental practice to visualize yourself in situations where you'll face challenges and barriers when trying to take action towards a meaningful activity.;Identify these situations and who is present, what are they saying and doing?;What intentions do you want to act on in this situation?; Break your action down into specific steps and imagine yourself acting them out.;Notice any barriers that arise such as anxiety, discouragement, and thoughts of failure.;Try to accept whatever discomfort these barriers bring while seeing yourself successfully complete your action.;Imagine the people there respond positively towards what you do and congratulate yourself for choosing your intentions over emotional-driven behaviour.;Repeat the full visualization at least one more time.",
+        can_save: true,
+        transcript: false,
+        unit_id: 7
+    },
+    {
+        id: 46,
+        page_number: 46,
+        title: 'Identify a Higher Power',
+        type: 'technique',
+        content: "Believing in a power that exists beyond the individual can be revitalizing. Whether it's the belief in a single God, multiple Gods, or the fundamental goodness of people, it can help you persevere through difficult situations. Finding hope can lead to an enduring human spirit and provide a higher sense of purpose. As you grow in life, your spirituality may change. It's perfectly acceptable to reconsider your faith if it no longer gives you the peace and strength it once did.; Consider how your beliefs in a higher power give you strength? How does it make you feel? How do they affect your interactions with others and how do you fortify your beliefs further? Write your answers down.;It's important to remember that belief in a higher power goes beyond just one god or many gods. Take a moment to look at the world around you and think about how we are all connected. The things that make up our bodies also make up the animals, plants, and earth that are with us. Look up and think about the huge universe we are in, with billions of stars shining in space. Look down and think about the tiny particles that move faster than we can understand. Understanding our place in the universe can make us feel amazed and grateful.",
+        can_save: true,
+        transcript: false,
+        unit_id: 7
+    },
+    {
+        id: 47,
+        page_number: 47,
+        title: 'Take a Time Out',
+        type: 'list',
+        content: "You can't pour from an empty cup. This metaphor means that you need to take care of yourself before you can take care of others. Helping others is a good thing, but it's also important to take time for yourself. Go for a walk, engage in an activity you enjoy, or take time off work!",
+        can_save: true,
+        images: 'talPrompt',
+        list: "Treat yourself as kindly as you treat other people, or even plants and animals! Do a nice thing for yourself that you’ve been putting off; Set aside time to focus on yourself, even for a few hours a week. Go for a walk, prepare your favourite meal; Take a half day from work, allow yourself time to rest. Visit a place you find beautiful or soothing, either amongst others or within nature; Take time to tick things off your to-do list, run errands",
+        unit_id: 7
+    },
+    {
+        id: 48,
+        page_number: 48,
+        title: 'Live in the Present',
+        type: 'technique',
+        content: "It's easy to miss what's going on around us when we're preoccupied with our own thoughts. We miss out on experiences, hold physical tension in our bodies, and allow our minds to wander away from the present moment. Living in the past or making assumptions about what others may say or do before they have the chance to act can potentially make situations more painful. Take time in everyday situations to ground yourself to the present circumstances.",
+        can_save: true,
+        transcript: true,
+        unit_id: 7
+    },
+    {
+        id: 49,
+        page_number: 49,
+        title: "Live in the Present (2)",
+        type: 'list',
+        images: 'talPrompt',
+        content: "Tal frequently forgets where he is and needs a way to remind himself of the present moment! That's okay! Here's what he asks himself to stay grounded.",
+        list: "Where am I right now? Am I in the present moment? Or am I thinking about something in the future or the past?; Am I reviewing past mistakes, reliving poor experiences, or ruminating on how things could have been different under other circumstances?; Am I aware of how my body feels? Am I paying attention to my breaths, discomforts, and addressing them appropriately?; Am I meticulously planning an event in the future, preparing for all possible circumstances to avoid a situation I can't control?",
+        can_save: true,
+        unit_id: 7,
+    },
+    {
+        id: 50,
+        page_number: 50,
+        title: null,
+        type: 'text',
+        content: "If you find yourself drifting away from the present moment when talking to someone, ground yourself by focusing your attention on something the person is wearing or take note of an attribute it has: such as color and appearance.",
+        can_save: true,
+        unit_id: 7
+    },
+    {
+        id: 51,
+        page_number: 51,
+        title: "Mindful Breathing",
+        type: 'technique',
+        content: "A way to stay focused on the present moment is to engage in mindful breathing. Focus on your breathing and try to employ diaphragmatic breathing which activates your diaphragm and allows deeper, fuller breaths. Practice this type of breathing first to become familiar and following along the technique below.",
+        transcript: true,
+        can_save: true,
+        unit_id: 7
+    },
+    {
+        id: 52,
+        page_number: 52,
+        title: "Self-Encouraging Coping Thoughts",
+        type: "list",
+        images: 'talPrompt',
+        content: "Using positive messages can help encourage us to stay strong. Training yourself to provide your own words of encouragement can improve your ability to cope independently. Writing down some of these thoughts can also help you remember them, especially when your mind is clouded by pain or stress.;Posting these messages where you can see them throughout the day can serve as a reminder. You can even record a video of yourself speaking words of affirmation.",
+        list: "This situation won’t last forever; I’ve already been through many other painful experiences, and I’ve survived; This too shall pass; My feelings make me uncomfortable right now, but I can accept them; I can be anxious and still deal with the situation; I’m strong enough to handle what’s happening to me right now; This is an opportunity for me to learn how to cope with my fears; I can ride this out and not let it get to me; I can take all the time I need right now to let go and relax; I’ve survived other situations like this before, and I’ll survive this one too; My anxiety/fear/sadness won’t kill me, it just doesn’t feel good right now; These are just my feelings, and eventually, they’ll go away; It’s okay to feel sad/anxious/afraid sometimes; My thoughts don’t control my life; I do; I can think different thoughts if I want to; I’m not in danger right now; So what?; This situation sucks, but it’s only temporary; I’m strong and I can deal with this",
+        can_save: true,
+        unit_id: 7
     }
 ]
     

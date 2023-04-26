@@ -75,7 +75,7 @@ exports.up = function (knex) {
       table.integer("overall_progress").notNullable().defaultTo(0);
       table.timestamps(true, true);
       table.boolean('newbie').defaultTo(true);
-      table.integer("units_done").defaultTo(0);
+      table.integer("units_done").defaultTo(3);
       table.integer("times_meditate").defaultTo(0);
       table.float("elapsed_meditate_time").defaultTo(0);
       table
@@ -84,7 +84,7 @@ exports.up = function (knex) {
         .notNullable()
         .references("id")
         .inTable("chapters")
-        .defaultTo(1)
+        .defaultTo(2)
         .onUpdate("CASCADE")
         .onDelete("CASCADE");
       table
@@ -93,7 +93,7 @@ exports.up = function (knex) {
         .notNullable()
         .references("id")
         .inTable("sections")
-        .defaultTo(1)
+        .defaultTo(3)
         .onUpdate("CASCADE")
         .onDelete("CASCADE");
       table
@@ -102,10 +102,10 @@ exports.up = function (knex) {
         .notNullable()
         .references("id")
         .inTable("units")
-        .defaultTo(1)
+        .defaultTo(3)
         .onUpdate("CASCADE")
         .onDelete("CASCADE");
-      table.integer("current_progress").defaultTo(0);
+      table.integer("current_progress").defaultTo(2);
     });
 };
 
