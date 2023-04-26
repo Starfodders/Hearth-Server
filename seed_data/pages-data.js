@@ -518,6 +518,61 @@ module.exports = [
         list: "This situation won’t last forever; I’ve already been through many other painful experiences, and I’ve survived; This too shall pass; My feelings make me uncomfortable right now, but I can accept them; I can be anxious and still deal with the situation; I’m strong enough to handle what’s happening to me right now; This is an opportunity for me to learn how to cope with my fears; I can ride this out and not let it get to me; I can take all the time I need right now to let go and relax; I’ve survived other situations like this before, and I’ll survive this one too; My anxiety/fear/sadness won’t kill me, it just doesn’t feel good right now; These are just my feelings, and eventually, they’ll go away; It’s okay to feel sad/anxious/afraid sometimes; My thoughts don’t control my life; I do; I can think different thoughts if I want to; I’m not in danger right now; So what?; This situation sucks, but it’s only temporary; I’m strong and I can deal with this",
         can_save: true,
         unit_id: 7
+    },
+    {
+        id: 53,
+        page_number: 53,
+        title: "Radical Acceptance - Expanded",
+        type: 'text',
+        content: "This concept was touched upon back in basic distress tolerance but is a crucial element of dialectical behavioural therapy. We must find balance in changing behaviours in our life that are creating suffering in yourself and others while simultaneously finding acceptance in yourself.",
+        can_save: true,
+        unit_id: 8
+    },
+    {
+        id: 54,
+        page_number: 54,
+        title: null,
+        type: 'text',
+        content: "This is much easier said than done, after all it’s one of the hardest skills to master. Therefore, it will be explored further in later chapters as well.;When faced with the present moment, we may feel compelled to resist it, change it, turn it into something it’s not. Radical acceptance means taking the present moment in stride and acknowledging it without judgement. Events that happen in the present don’t spontaneously occur. They are a result of a chain of events that happened in the past and therefore have already taken place.",
+        can_save: true,
+        unit_id: 8
+    },
+    {
+        id: 55,
+        page_number: 55,
+        title: null,
+        type: 'text',
+        content: "Radical acceptance does NOT mean giving up and simply accepting any situation that happens to you. Do not tolerate unjust situations such as abuse or assault.",
+        can_save: true,
+        unit_id: 8
+    },
+    {
+        id: 56,
+        page_number: 56,
+        title: 'Self-Reflection',
+        type: 'technique',
+        content: "People struggling to deal with intense emotions may believe that situations just happen to them and that they play no part in their occurrence. An individual who gets angry as their initial response may trigger a chain of events that lead to poor coping mechanisms, self-loathing, and strained relationships.;If you think this applies to you then consider the following:;What events lead up to this situation?; What role did you play in it occurring? What role did others play as well?; What do and don’t you have control of in this situation?;How did your response affect the outcome?; How did your response affect your personal feelings?; How could your response have been different?",
+        transcript: false,
+        can_save: true,
+        unit_id: 8
+    },
+    {
+        id: 57,
+        page_number: 57,
+        title: null,
+        type: 'text',
+        content: "There is a realization in knowing you share some responsibility in the events that do occur. This gives you the opportunity to respond appropriately in a way thats less harmful or painful to yourself or others. Consider R.E.S.T. and how radical acceptance leads you into a better thought pattern for proper usage of R.E.S.T.",
+        can_save: true,
+        unit_id: 8
+    },
+    {
+        id: 58,
+        page_number: 58,
+        title: null,
+        type: 'text',
+        content: "In order to accept yourself without judgement, you must love and accept yourself for who you are-virtues and faults. It is easy to overlook your good qualities in favour of the bad especially if you suffer from overwhelming emotion. This search for finding your self-worth is a journey you need to take to find radical acceptance.",
+        can_save: true,
+        unit_id: 8
     }
 ]
     
