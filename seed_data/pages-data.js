@@ -573,6 +573,164 @@ module.exports = [
         content: "In order to accept yourself without judgement, you must love and accept yourself for who you are-virtues and faults. It is easy to overlook your good qualities in favour of the bad especially if you suffer from overwhelming emotion. This search for finding your self-worth is a journey you need to take to find radical acceptance.",
         can_save: true,
         unit_id: 8
+    },
+    {
+        id: 59,
+        page_number: 59,
+        title: 'Self-Affirming Statements',
+        type: 'list',
+        images: 'talPrompt',
+        content: "You may find it helpful to use self-affirming statements to remind you of the good qualities you possess. Repeating them during stressful situations can remind you that beneath the overwhelming emotion and distress is a caring, loving person who is capable of handling these circumstances in a healthier way.;Tal has some suggestions for you, but we encourage you to come up with some of your own! Feel free to write them on notes and leave them around your home!",
+        list: "I might have some faults but I’m still a good person; I care about myself and other people; I accept who I am; I love myself; I’m a good person, not a mistake; I’m good and nobody’s perfect; I embrace both my good and bad qualities; Today I take responsibility for everything I do and say; I’m becoming a better person every day; I’m a sensitive person with rich emotional experiences; Each day I do the best I can; Even though I forget sometimes, I’m still a good person; Even though I’ve made mistakes in the past, I’m still a good person; I’m here for a reason; There’s purpose to my life, even thoughI might not always see it; I radically accept myself",
+        can_save: true,
+        unit_id: 9,
+    },
+    {
+        id: 60,
+        page_number: 60,
+        title: 'Feelings-Threat Balance (FTB-Cope)',
+        type: 'technique',
+        content: "In response to stress or a threat, anger and anxiety are emotions we use to defend ourselves. However, how can we determine if our reaction is appropriate or if we are overreacting?;FTB-Cope is a way to quantify the feelings we feel versus the threat we are facing on a scale of 0 to 10. You first rate from 0 to 10 the intensity of the feeling you are experiencing. Then rate from 1 to 10 the intensity of the threat you are experiencing. Compare the two numbers, are they close together or far apart? The further the two numbers are from one another, the higher the likelihood you are acting on emotion than logic. All the more reason to cope rather than act in this situation.;If you find a disparity between the two numbers, then consider using one of the techniques covered in previous units to cope with your feelings.;Emotions are messages from your brain, they don’t prove the legitimacy of real-life problems. You’ll learn more about emotional regulation in a future chapter.;In the meantime, feel free to use this worksheet to assess different emotions in response to a threat.",
+        transcript: false,
+        can_save: true,
+        unit_id: 9
+    },
+    {
+        id: 61,
+        page_number: 61,
+        title: 'FTB-Cope Summary',
+        type: 'summary',
+        content: "When feeling intense emotion, consider:;Calculating the intensity of your feeling (0 to 10);Calculate the actual threat (0 to 10);If the feelings and threat are the same, take action or solve the problem;If the intensity of feeling is much higher than the threat, do not take action and instead consider a coping strategy to soothe yourself.",
+        can_save: true,
+        unit_id: 9
+    },
+    {
+        id: 62,
+        page_number: 62,
+        title: 'Create New Coping Strategies',
+        type: 'technique',
+        content: "You have been exposed to several types of distress tolerance strategies at this point. You can create your own types of coping strategies by examining what you have experienced in the past. Usually distressing situations are not unique and are somewhat predictable. You can use these worksheets to identify these past situations, what you did to cope, what unhealthy consequences occurred as a result. Then you can identify what new coping strategies you can use instead and what might the healthier consequences be this time.;Note that there are two types of worksheets, one for when you’re alone and one for when you’re around others. For example, using cue-controlled relaxation might be awkward around others so preparing a different coping strategy is ideal.",
+        transcript: false,
+        can_save: true,
+        unit_id: 9
+    },
+    {
+        id: 63,
+        page_number: 63,
+        title: 'Emergency Coping Plan',
+        type: 'technique',
+        content:"To prepare for sudden feelings of overwhelming emotion, having an emergency coping plan ready will help you from being caught off-guard. Create your own plan or use this worksheet as a baseline. Identify four sets of strategies for when you are alone and when you are with others, listing them from most effective to least effective. If the first strategy doesn’t work, that’s ok! Move onto the next one and continue to do so until your distress subsides.",
+        transcript: false,
+        can_save: true,
+        unit_id: 9
+    },
+    {
+        id: 64,
+        page_number: 64,
+        title: "Physiological Coping Skills",
+        type: 'text',
+        content: "In this unit, you’ll learn about physiological coping skills. Physiological refers to the functions of your own body, so we’ll be taking advantage of your built in mechanisms and reflexes.;Keep track of which of these skills work best for you, the same as you have been doing for the previous units. However if you struggle with any medical conditions or take medications that affect balance, blood pressure, heart rate, breathing, or are pregnant, please check with your medical professional first before trying these skills. They have the ability to rapidly decrease your heart rate and blood pressure.",
+        can_save: true,
+        unit_id: 10,
+    },
+    {
+        id: 65,
+        page_number: 65,
+        title: "Side to Side Eye Movements",
+        type: 'technique',
+        content: "An easy, quick to use technique that has shown to create a relaxing effect. Simply keep your head still and move your eyes back and forth from side to side for about 30 seconds. It has the potential to reduce distress tied to painful memories and making these memories less vivid.",
+        transcript: true,
+        can_save: true,
+        unit_id: 10
+    },
+    {
+        id: 66,
+        page_number: 66,
+        title: 'Diving Response',
+        type: 'technique',
+        content: "This is a physiological response to very cold water touching your face while holding your breath-similar to what happens when you dive into water. This activates a relaxation response and slows your heart rate.",
+        transcript: true,
+        can_save: true,
+        unit_id: 10
+    },
+    {
+        id: 67,
+        page_number: 67,
+        title: 'Cold Pressor',
+        type: 'technique',
+        content: "For those who engage in self-harm, this is a way to replicate the emotional relief from this act while preventing bodily harm. Simply hold a very cold ice pack in your hand or submerge your hand into cold water for 2 - 4 minutes before stopping. This can lead to a noticeable reduction in anger, confusion, depression, or anxiety without needing to self-harm.",
+        transcript: true,
+        can_save: true,
+        unit_id: 10
+    },
+    {
+        id: 68,
+        page_number: 68,
+        title: "High Intensity Interval Training (HIIT)",
+        content: "Exercise, as you may already know, is a proven way to mitigate stress hormones, reduce anxiety and depression, and improve overall health. However, exercise can be difficult to maintain, you may find it too difficult, too time-consuming, or too unenjoyable.;Shorter bursts of high-intensity exercise followed by short periods of recovery has equal benefits to exercising for longer periods of time.;This can be a more enjoyable and manageable form of exercise for you to engage in.",
+        type: 'technique',
+        transcript: true,
+        can_save: true,
+        unit_id: 10
+    },
+    {
+        id: 69,
+        page_number: 69,
+        title: "Slow Breathing",
+        content: "The way you breathe has a direct influence on your heart rate and nervous system. With each inhalation, your heart rate speeds up. With each exhalation, your heart rate slows down.;A reduced heart rate has anxiety-reducing effects and this can be accomplished through an overall reduction in breathing rate as well as an extended length of exhalation.;On average, we breath 24 times per minute at an average 2.5 seconds per inhale and exhale. The end goal is 6 breaths per minute which equals to each breath inhale and exhale taking 10 seconds.;This will take practice to achieve so work your way towards this milestone. Try to focus on the exhalation, allowing it to take longer than the inhalation.;If at any point you feel light-headed or dizzy, return your breathing to normal and stabilize before trying again.",
+        type: 'technique',
+        transcript: true,
+        can_save: true,
+        unit_id: 10
+    },
+    {
+        id: 70,
+        page_number: 70,
+        title: "Progressive Muscle Relaxation",
+        type: 'technique',
+        content: "The next three techniques fall under Progressive Muscle Relaxation, going from active, to threshold, to passive. In response to stress, we tend to tighten our muscles. This group of techniques was created to progressively release tension in your muscles which helps sooth mental and emotional distress. Pairing it with a verbal cue (like the word ‘peace’) can create a trigger for your muscles to disengage any tension.;Consider the instructions below.",
+        transcript: true,
+        can_save: true,
+        unit_id: 10
+    },
+    {
+        id: 71,
+        page_number: 71,
+        title: null,
+        type: 'summary',
+        content: "We hold onto stress within our bodies often without even noticing. Learning how to progressively release this tension will ease subconscious pain, improving our emotional state.",
+        can_save: true,
+        unit_id: 10
+    },
+    {
+        id: 72,
+        page_number: 72,
+        title: "Active Tensing",
+        type: 'technique',
+        content: "The first of three progressive muscle relaxation techniques.;First tighten a group of muscles to notice the tension but not to the point of pain. Hold it for 5 seconds and then quickly release the tension. While tensing, continue to breath normally while keeping the rest of your body relaxed.;Pick a verbal cue to use to prompt your body to relax. With enough repetition, the act of saying your cue word will train your muscles to relax on command. Use a word such as ‘Peace’, ‘Calm’, or ‘Relax’.;With active tensing and your cue word in mind, consider the following technique.",
+        transcript: true,
+        can_save:true,
+        unit_id: 10
+    },
+    {
+        id: 73,
+        page_number: 73,
+        title: "Threshold Tensing",
+        type: 'technique',
+        content: "The second of three progressive muscle relaxation techniques.;Threshold tensing is more subtle than active and involves tensing your muscles to the point that the tension is barely noticeable. Hold this tension for 5 seconds and then release it. Notice the relaxed feeling of your muscles for 15-30 seconds. Remember to breath normally. This tension may already in exist in those suffering from an injury and are protecting their body.;Pick a verbal cue to use to prompt your body to relax. With enough repetition, the act of saying your cue word will train your muscles to relax on command. Use a word such as ‘Peace’, ‘Calm’, or ‘Relax’.;With threshold tensing and your cue word in mind, consider the following technique.",
+        transcript: true,
+        can_save:true,
+        unit_id: 10
+    },
+    {
+        id: 74,
+        page_number: 74,
+        title: 'Passive Tensing',
+        type: 'technique',
+        content: "The third of three progressive muscle relaxation techniques.;Passive tensing asks for no tensing at all but for you to notice existing tension within your muscles. Notice any tension for 5 seconds and then focus on releasing this tension. Imagine the muscle is loosening up, the tension melting away. Or take a breath in and upon release, imagine your muscles releasing the stress at the same time. ;Pick a verbal cue to use to prompt your body to relax. With enough repetition, the act of saying your cue word will train your muscles to relax on command. Use a word such as ‘Peace’, ‘Calm’, or ‘Relax’.;With passive tensing and your cue word in mind, consider the following technique.",
+        transcript: true,
+        can_save:true,
+        unit_id: 10
     }
 ]
     
