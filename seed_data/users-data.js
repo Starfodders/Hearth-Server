@@ -3,13 +3,12 @@ module.exports = [
         id : 1,
         given_name: 'Michael', 
         email: 'michaeldeng55@gmail.com',
-        overall_progress: 1,
         password: '12345',
         chapter: 2,
         newbie: false,
         section: 4,
-        unit: 8,
-        current_progress: 7
+        unit: 10,
+        current_progress: 9
     },
     {
         given_name: 'Test',

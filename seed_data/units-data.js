@@ -83,9 +83,20 @@ module.exports = [
     available: false,
     section_id: 4,
   },
+  {
+    id: 11,
+    name: "Basic Mindfulness I",
+    images: "/images/tal2.png",
+    title: 'Basic Mindfulness',
+    available: false,
+    section_id: 5
+  },
+  {
+    id: 12,
+    name: 'Basic Mindfulness II',
+    images: "/images/tal2.png",
+    title: 'Basic Mindfulness',
+    available: false,
+    section_id: 5
+  }
 ];
-
-// id: 11,
-// name: 'Basic Mind I',
-// images: null,
-// section_id: 5

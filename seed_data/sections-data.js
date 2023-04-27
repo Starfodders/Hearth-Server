@@ -34,13 +34,15 @@ module.exports = [
         title: 'Distress Tolerance',
         units: 4,
         chapter_id: 2
-    }
-]
+    },
+    {
+        id: 5,
+        name: 'Basic Mindfulness',
+        images: '/images/tal2.png',
+        available: false,
+        title: 'Mindfulness',
+        units: 4,
+        chapter_id: 3
+    },
 
-// {
-//     id: 3,
-//     name: 'Basic Mindfulness',
-//     images: null,
-//     completed: false,
-//     chapters_id: 3
-// }
+]

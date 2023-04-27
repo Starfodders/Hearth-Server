@@ -33,6 +33,7 @@ module.exports = [
     id: 5,
     name: "Interpersonal Effectiveness",
     available: false,
+    overall_available: false,
     images: "/images/igoRok1.png",
   },
   {
@@ -43,3 +44,4 @@ module.exports = [
     images: "/images/allfour.png",
   },
 ];
+

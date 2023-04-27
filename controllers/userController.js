@@ -78,7 +78,7 @@ exports.checkNew = async(req, res) => {
   try {
     const user = await knex('users').where({id: req.params.userID}).first()
     console.log(user);
-    return res.status(200).json({isNew: user.newbie, progress: user.overall_progress})
+    return res.status(200).json({isNew: user.newbie, progress: user.chapter})
   }
   catch(err) {
     console.log(err);
@@ -127,24 +127,35 @@ exports.update = async (req, res) => {
   const updateUnit = parseInt(unitID) + 1;
   try {
     const getUser = await knex("users").where({ id: userID }).first();
-    if (getUser.current_progress >= parseInt(unitID)) {
-      return res.status(200).json({message: "OK, but no update to user"})
+
+    if (!getUser) {
+      return res.status(404).json({message: `No User Found at ID ${userID}`})
+    } else {
+      //checks for current progress
+      if (getUser.current_progress >= parseInt(unitID)) {
+        return res.status(200).json({message: "User found but no update provided as current progress is higher than current unit completed"})
+      } else {
+        //if completed unit is newest available, update their progress and unlock access to next unit
+        const getSection = await knex("units").where({ id: updateUnit }).first();
+        const sectionID = getSection.section_id;
+    
+        const getChapter = await knex("sections").where({ id: sectionID }).first();
+        const chapterID = getChapter.chapter_id;
+        
+        const updatedUser = await knex("users")
+          .where({ id: userID })
+          .update({ current_progress: unitID, unit: updateUnit, section: sectionID, chapter: chapterID });
+        return res.status(200).json(updatedUser);
+      }
     }
-
-    const getSection = await knex("units").where({ id: updateUnit }).first();
-    const sectionID = getSection.section_id;
-
-    const getChapter = await knex("sections").where({ id: sectionID }).first();
-    const chapterID = getChapter.chapter_id;
-
-    const updatedUser = await knex("users")
-      .where({ id: userID })
-      .update({ current_progress: unitID, unit: updateUnit, section: sectionID, chapter: chapterID });
-    return res.status(200).json(updatedUser);
+    
   } catch (error) {
     return res
-      .status(404)
-      .json({ message: `Cannot find user at id ${userID}` });
+      .status(500)
+      .json({ message: `Bad Request` });
   }
 };
+
+//gets the user id and unit id from params, updates the user's specific unit to unitId + 1 to provide access
+//then try to get the user based on param user id
 

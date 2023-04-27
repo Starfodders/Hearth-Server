@@ -72,7 +72,6 @@ exports.up = function (knex) {
       table.string("given_name").defaultTo("Traveller");
       table.string("email").notNullable();
       table.string("password").notNullable();
-      table.integer("overall_progress").notNullable().defaultTo(0);
       table.timestamps(true, true);
       table.boolean('newbie').defaultTo(true);
       table.integer("units_done").defaultTo(3);
