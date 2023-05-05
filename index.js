@@ -20,6 +20,7 @@ const chapterRoutes = require('./routes/chapterRoute')
 const unitRoutes = require('./routes/unitRoute')
 const collectionRoutes = require('./routes/collectionRoute')
 const meditateRoutes = require('./routes/meditateRoute')
+const feedbackRoutes = require('./routes/feedbackRoutes')
 
 
 app.use(cors(
@@ -33,6 +34,7 @@ app.use('/chapters', chapterRoutes)
 app.use('/units', unitRoutes)
 app.use('/collections', collectionRoutes)
 app.use('/meditate', meditateRoutes)
+app.use('/feedback', feedbackRoutes)
 
 
 // const server = https.createServer(options, app)
