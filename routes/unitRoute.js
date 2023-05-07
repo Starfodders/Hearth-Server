@@ -4,6 +4,7 @@ const knex = require('knex')(require('../knexfile'));
 const unitController = require('../controllers/unitController')
 
 router.route('/:id').get(unitController.getUnit)
+router.route('/:id/all').get(unitController.getUnitList)
 router.route('/transcript/:id/:pageNum').get(unitController.getTranscript)
 router.route('/finish/:id').get(unitController.getCloser)
 

@@ -13,6 +13,18 @@ exports.getUnit = async (req, res) => {
     });
 };
 
+exports.getUnitList = async (req, res) => {
+  await knex('units').where({id: req.params.id})
+  .then((data) => {
+    res.status(200).json(data)
+  })
+  .catch((err) => {
+    res.status(404).json({
+      message: `No pages found for units with id ${req.params.id}` + err,
+    });
+  })
+}
+
 exports.getTranscript = async (req, res) => {
   //when given a specific unit ID and page num from front end, send back the transcript data
   const transcriptLocation = `unit${req.params.id}`;

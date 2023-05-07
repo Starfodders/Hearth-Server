@@ -78,7 +78,7 @@ exports.checkNew = async(req, res) => {
   try {
     const user = await knex('users').where({id: req.params.userID}).first()
     console.log(user);
-    return res.status(200).json({isNew: user.newbie, progress: user.chapter})
+    return res.status(200).json({isNew: user.newbie, progress: user.chapter, currentUnitToNav: user.unit})
   }
   catch(err) {
     console.log(err);
