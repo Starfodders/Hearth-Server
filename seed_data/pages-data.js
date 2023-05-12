@@ -245,7 +245,7 @@ module.exports = [
         can_save: true,
         list: "Instead of hurting yourself, hold an ice cube in one hand and squeeze it. The sensation from the cold ice is numbing and very distracting; Write on yourself with a red felt-tip marker instead of cutting. Draw exactly where you would cut. Use red paint or nail polish to make it look like you’re bleeding. Then draw stitches with a black marker. If you need to make it even more distracting, squeeze an ice cube in the other hand at the same time; Gently snap a rubber band on your wrist each time you feel like hurting yourself. This might cause some minor temporary pain but it causes less permanent damage than cutting, burning, or mutilating yourself; Gently dig your fingernails into your arm without breaking the skin; Draw faces of people you hate on balloons and then pop them; Write letters to people you hate or to people who have hurt you. Tell them what they did to you and tell them why you hate them. Then throw the letters away or save them to read later;Throw foam balls, rolled-up socks, or pillows against the wall as hard as you can; Scream as loud as you can into a pillow or scream someplace where you won’t draw the attention of other people, like at a loud concert or in your car; Stick pins in a doll instead of hurting yourself. You can make a doll with some rolled-up socks or a foam ball and some markers. Or you can buy a doll in a store for the specific purpose of sticking pins in it. Buy one that’s soft and easy to stick; Cry. Sometimes people do other things instead of crying because they’re afraid that if they start to cry, they’ll never stop. This never happens. In fact, the truth is that crying can make you feel better because it releases stress hormones; Go exercise. Go to the gym or yoga studio and take out your pain and frustration doing something healthy. Go for a long walk or a long run. Use all of that destructive energy you feel in a positive way", 
         images: 'talPrompt',
-        links: './pdfs/selfharm.pdf',
+        links: '/pdfs/self-harm.pdf',
         unit_id: 4
     },
     {
@@ -257,6 +257,7 @@ module.exports = [
         can_save: true,
         list: "Talk to a friend on the telephone; Go out and visit a friend; Invite a friend to come over to your home; Text or email your friends; Organize a party; Exercise; Lift weights; Do yoga, tai-chi, pilates or take a class to learn; Stretch your muscles; Go for a long walk outside somewhere that's peaceful; Go outside and watch the clouds; Go jog; Ride your bike; Go for a swim; Go hiking; Do something exciting, like surfing, rock climbing, skiing, skydiving, motorcycle riding, or kayaking, or go learn how to do one of these things; Go to your local playground and join a game being played or watch a game; Go play something you can do by yourself if no one else is around, like basketball, bowling, handball, miniature golf, billiards, or hitting a tennis ball against the wall; Get a massage; this can also help soothe your emotions; Get out of your house, even if you just sit outside; Go for a drive in your car or go for a ride on public transportation; Plan a trip to a place you’ve never been before; Sleep or take a nap; Eat chocolate (it’s good for you!) or eat something else you really like; Eat your favorite ice cream; Cook your favorite dish or meal; Cook a recipe that you’ve never tried before; Take a cooking class; Go out for something to eat; Go outside and play with your pet; Go borrow a friend’s dog and take it to the park; Give your pet a bath; Go outside and watch the birds and other animals; Find something funny to do, like watching a funny video on YouTube; Watch a funny movie (start collecting funny movies to watch when you’re feeling overwhelmed with pain); Go to the movie theater and watch whatever’s playing; Watch television; Listen to the radio; Go to a sporting event, like a baseball or football game; Play a game with a friend; Play solitaire; Play video games; Go online to chat; Visit your favorite websites; Visit crazy websites and start keeping a list of them; Create your own website; Create your own online blog; Join an Internet dating service; Sell something you don’t want on the Internet; Buy something on the Internet (within your budget); Do a puzzle with a lot of pieces; Call a crisis or suicide hotline and talk to someone; Go shopping; Go get a haircut; Go to the spa; Go to a library; Go to a bookstore and read; Go to your favorite café for coffee or tea; Visit a museum or local art gallery; Go to the mall or the park and watch other people; try to imagine what they’re thinking; Pray or meditate; Go to your church, synagogue, temple, or other place of worship; Join a group at your place of worship; Write a letter to God; Call a family member you haven’t spoken to in a long time; Learn a new language; Sing or learn how to sing; Play a musical instrument or learn how to play one; Write a song; Listen to some upbeat, happy music (start collecting happy songs for times when you’re feeling overwhelmed); Turn on some loud music and dance in your room; Memorize lines from your favorite movie, play, or song; Make a movie or video with your smartphone; Take photographs; Join a public-speaking group and write a speech; Participate in a local theater group; Sing in a local choir; Join a club; Plant a garden; Work outside; Knit, crochet, or sew—or learn how to; Make a scrapbook with pictures; Paint your nails; Change your hair color; Take a bubble bath or shower; Work on your car, truck, motorcycle, or bicycle; Sign up for a class that excites you at a local college, adult school, or online; Read your favorite book, magazine, paper, or poem; Read a trashy celebrity magazine; Write a letter to a friend or family member; Write things you like about yourself on a picture of your body or draw them on a photograph of yourself; Write a poem, story, movie, or play about your life or someone else’s life; Write in your journal or diary about what happened to you today; Write a loving letter to yourself when you’re feeling good and keep it with you to read when you’re feeling upset; Make a list of ten things you’re good at or that you like about yourself when you’re feeling good, and keep it with you to read when you’re feeling upset; Draw a picture; Paint a picture with a brush or your fingers; Spend time with someone you care about, respect, or admire; Make a list of the people you admire and want to be like—it can be anyone real or fictional throughout history. Describe what you admire about these people; Write a story about the craziest, funniest, or most meaningful thing that has ever happened to you; Make a list of ten things you would like to do before you die; Make a list of ten celebrities you would like to be friends with and describe why; Make a list of ten celebrities you would like to date and describe why; Write a letter to someone who has made your life better and tell them why. (You don’t have to send the letter if you don’t want to); Create your own list of pleasurable activities.",
         images: 'talPrompt',
+        links: "/pdfs/pleasurable-activities.pdf",
         unit_id: 4
     },
     {
@@ -426,6 +427,7 @@ module.exports = [
         content: "What is important to you in life? It's easy to forget the things that give our lives meaning and importance. By remembering and rediscovering your values, you can better tolerate overwhelming situations. This Valued Living Questionnaire is a checklist to separate the different components of your life. Completing it the first time, answer each row based on their important to you ideally. For example, if you value self-care greatly, you can rate it higher such as a 10.;Then during your second time completing this questionnaire, answer based on the actual time and effort you put towards each aspect of your life. Compare the two results. If there is a great difference between your ideal value versus your actual committment, this may indicate you need to reprioritize your time and effort.",
         can_save: true,
         transcript: false,
+        links: '/pdfs/valued-living.pdf',
         unit_id: 7
     },
     {
@@ -436,6 +438,7 @@ module.exports = [
         content: "This is an expansion on the previous technique 'Valued Living Questionnaire', where we develop intentions to create a more fulfilling life. Referencing the results of your questionnaire, identify components that you value but do not put enough effort into.;Then identify an intention to improve the quality of each component. For example, if you value education then set an intention to take a class or go back to school.;Then identify several specific actions that will move you towards your intention. The goal is to fill your life with meaningful activity thats based on personally identified motives.",
         can_save: true,
         transcript: false,
+        links: '/pdfs/committed-action.pdf',
         unit_id: 7
     },
     {
@@ -445,6 +448,7 @@ module.exports = [
         type: 'summary',
         content: "Mental practice to visualize yourself in situations where you'll face challenges and barriers when trying to take action towards a meaningful activity.;Identify these situations and who is present, what are they saying and doing?;What intentions do you want to act on in this situation?; Break your action down into specific steps and imagine yourself acting them out.;Notice any barriers that arise such as anxiety, discouragement, and thoughts of failure.;Try to accept whatever discomfort these barriers bring while seeing yourself successfully complete your action.;Imagine the people there respond positively towards what you do and congratulate yourself for choosing your intentions over emotional-driven behaviour.;Repeat the full visualization at least one more time.",
         can_save: true,
+        links: '/pdfs/cognitive-rehearsal.pdf',
         transcript: false,
         unit_id: 7
     },
@@ -555,6 +559,7 @@ module.exports = [
         content: "People struggling to deal with intense emotions may believe that situations just happen to them and that they play no part in their occurrence. An individual who gets angry as their initial response may trigger a chain of events that lead to poor coping mechanisms, self-loathing, and strained relationships.;If you think this applies to you then consider the following:;What events lead up to this situation?; What role did you play in it occurring? What role did others play as well?; What do and don’t you have control of in this situation?;How did your response affect the outcome?; How did your response affect your personal feelings?; How could your response have been different?",
         transcript: false,
         can_save: true,
+        links: '/pdfs/radical-acceptance.pdf',
         unit_id: 8
     },
     {
@@ -593,6 +598,7 @@ module.exports = [
         type: 'technique',
         content: "In response to stress or a threat, anger and anxiety are emotions we use to defend ourselves. However, how can we determine if our reaction is appropriate or if we are overreacting?;FTB-Cope is a way to quantify the feelings we feel versus the threat we are facing on a scale of 0 to 10. You first rate from 0 to 10 the intensity of the feeling you are experiencing. Then rate from 0 to 10 the intensity of the threat you are experiencing. Compare the two numbers, are they close together or far apart? The further the two numbers are from one another, the higher the likelihood you are acting on emotion than logic. All the more reason to cope rather than act in this situation.;If you find a disparity between the two numbers, then consider using one of the techniques covered in previous units to cope with your feelings.;Emotions are messages from your brain, they don’t prove the legitimacy of real-life problems. You’ll learn more about emotional regulation in a future chapter.;In the meantime, feel free to use this worksheet to assess different emotions in response to a threat.",
         transcript: false,
+        links: '/pdfs/ftb-balance.pdf',
         can_save: true,
         unit_id: 9
     },
@@ -612,6 +618,7 @@ module.exports = [
         type: 'technique',
         content: "You have been exposed to several types of distress tolerance strategies at this point. You can create your own types of coping strategies by examining what you have experienced in the past. Usually distressing situations are not unique and are somewhat predictable. You can use these worksheets to identify these past situations, what you did to cope, what unhealthy consequences occurred as a result. Then you can identify what new coping strategies you can use instead and what might the healthier consequences be this time.;Note that there are two types of worksheets, one for when you’re alone and one for when you’re around others. For example, using cue-controlled relaxation might be awkward around others so preparing a different coping strategy is ideal.",
         transcript: false,
+        links: '/pdfs/new-coping.pdf',
         can_save: true,
         unit_id: 9
     },
@@ -622,6 +629,7 @@ module.exports = [
         type: 'technique',
         content:"To prepare for sudden feelings of overwhelming emotion, having an emergency coping plan ready will help you from being caught off-guard. Create your own plan or use this worksheet as a baseline. Identify four sets of strategies for when you are alone and when you are with others, listing them from most effective to least effective. If the first strategy doesn’t work, that’s ok! Move onto the next one and continue to do so until your distress subsides.",
         transcript: false,
+        links: '/pdfs/emergency-plan.pdf',
         can_save: true,
         unit_id: 9
     },
@@ -671,6 +679,7 @@ module.exports = [
         content: "Exercise, as you may already know, is a proven way to mitigate stress hormones, reduce anxiety and depression, and improve overall health. However, exercise can be difficult to maintain, you may find it too difficult, too time-consuming, or too unenjoyable.;Shorter bursts of high-intensity exercise followed by short periods of recovery has equal benefits to exercising for longer periods of time.;This can be a more enjoyable and manageable form of exercise for you to engage in.",
         type: 'technique',
         transcript: true,
+        links: '/pdfs/hiit-log.pdf',
         can_save: true,
         unit_id: 10
     },
