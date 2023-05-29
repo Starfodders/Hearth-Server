@@ -417,6 +417,7 @@ module.exports = [
         content: "Cues are triggers or commands that prompt you to relax. Through habitual training, the cue word will help your body relax in response to the cue, releasing tension. What would your cue word be?;Try to practice this twice a day for consistent results. Follow the steps below.",
         can_save: true,
         transcript: true,
+        audio: true,
         unit_id: 7
     },
     {
