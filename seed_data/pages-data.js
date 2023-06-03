@@ -481,6 +481,7 @@ module.exports = [
         type: 'technique',
         content: "It's easy to miss what's going on around us when we're preoccupied with our own thoughts. We miss out on experiences, hold physical tension in our bodies, and allow our minds to wander away from the present moment. Living in the past or making assumptions about what others may say or do before they have the chance to act can potentially make situations more painful. Take time in everyday situations to ground yourself to the present circumstances.",
         can_save: true,
+        audio: true,
         transcript: true,
         unit_id: 7
     },
@@ -651,6 +652,7 @@ module.exports = [
         content: "An easy, quick to use technique that has shown to create a relaxing effect. Simply keep your head still and move your eyes back and forth from side to side for about 30 seconds. It has the potential to reduce distress tied to painful memories and making these memories less vivid.",
         transcript: true,
         can_save: true,
+        audio: true,
         unit_id: 10
     },
     {
@@ -661,6 +663,7 @@ module.exports = [
         content: "This is a physiological response to very cold water touching your face while holding your breath-similar to what happens when you dive into water. This activates a relaxation response and slows your heart rate.",
         transcript: true,
         can_save: true,
+        audio: true,
         unit_id: 10
     },
     {
