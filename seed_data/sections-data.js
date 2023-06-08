@@ -2,7 +2,7 @@ module.exports = [
     {
         id: 1,
         name: 'Introduction I',
-        images: '/images/introbag.png',
+        images: 'introbag',
         available: true,
         title: 'Introduction',
         units: 1,
@@ -11,7 +11,7 @@ module.exports = [
     {
         id: 2,
         name: 'Introduction II',
-        images: '/images/introbag.png',
+        images: 'introbag',
         available: false,
         title: 'Introduction',
         units: 1,
@@ -20,7 +20,7 @@ module.exports = [
     {
         id: 3,
         name: 'Basic Distress Tolerance',
-        images: '/images/tal1.png',
+        images: 'tal1',
         available: false,
         title: 'Distress Tolerance',
         units: 4,
@@ -29,7 +29,7 @@ module.exports = [
     {
         id: 4,
         name: 'Advanced Distress Tolerance',
-        images: '/images/tal2.png',
+        images: 'tal2',
         available: false,
         title: 'Distress Tolerance',
         units: 4,
@@ -38,7 +38,7 @@ module.exports = [
     {
         id: 5,
         name: 'Basic Mindfulness',
-        images: '/images/tal2.png',
+        images: 'mana1',
         available: false,
         title: 'Mindfulness',
         units: 4,

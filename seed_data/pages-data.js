@@ -107,7 +107,7 @@ module.exports = [
         content: "Tal will join you as you progress through your first journey and learn about Distress Tolerance.;This is Tal’s first trip to the Hearth. Although they’re scared, you and Tal will both discover insights into handling stressful situations.",
         transcript: null,
         can_save: false,
-        images: '/images/talPrompt.png',
+        images: 'talPrompt',
         unit_id: 3
     },
     {
