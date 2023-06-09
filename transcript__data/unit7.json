@@ -13,7 +13,7 @@
       "p9": "Now take a few more seconds to explore your safe place using all of your imaginary senses. Recognize how safe and relaxed you feel here. Remember that you can come back to this place in your imagination whenever you need to feel safe and relaxed. You can also come back whenever you’re feeling sad, angry, restless, or in pain. Look around one last time to remember what it looks like.",
       "p10": "Now keep your eyes closed and return your focus to your breathing. Again, take some slow, long breaths in through your nose and exhale through your mouth. Then, when you feel ready, open your eyes and return your focus to the room."
     },
-    "audio": "/audio/safeplaceAudio.mp3"
+    "audio": "safeplaceAudio"
   },
   {
     "id": "42",
@@ -23,7 +23,7 @@
       "p3" : "Continue to notice how peaceful and calm you feel as you continue to take slow, long, smooth breaths. Observe how your stomach continues to expand as you inhale, and feel it deflate as you exhale. Now, as you continue breathing, silently think to yourself “breathe in” as you inhale, and then silently think your cue word as you exhale. [If your cue word is something other than “relax,” use that word in the following instructions.] Slowly inhale and think: “breathe in.” Slowly exhale and think: “relax.” As you do, notice your entire body feeling relaxed at the same time. Feel all the muscle tension in your body being released as you focus on your cue word. Again, inhale and think: “breathe in.” Exhale and think: “relax.” Notice your entire body releasing any muscle tension. Again, inhale…“breathe in.” Exhale…“relax.” Feel all the tension in your body releasing.",
       "p4": "Continue breathing and thinking these words at your own pace for several minutes. With each breath, notice how relaxed your entire body feels. When your mind begins to wander, return your focus to the words “breathe in” and “relax.”"
     },
-    "audio": "/audio/cueControlAudio.mp3"
+    "audio": "cueControlAudio"
   },
   {
     "id": "48",
@@ -32,7 +32,7 @@
       "p2": "Listen to any sounds you hear outside your home, inside your home, and inside your own body. Count each sound that you hear. When you get distracted, return your focus to listening. Maybe you hear cars, people, or airplanes outside. Perhaps you hear a clock ticking or a fan blowing inside. Or maybe you hear the sound of your own heart beating inside your body",
       "p3": "Actively and carefully listen to your environment and count as many sounds as you can. Try this exercise for five minutes and notice how you feel afterward."
     },
-    "audio": "/audio/listenToNow.mp3"
+    "audio": "listenToNow"
   },
   {
     "id": "51",
