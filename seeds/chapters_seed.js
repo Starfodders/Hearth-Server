@@ -4,6 +4,8 @@ const unitsData = require('../seed_data/units-data');
 const pagesData = require('../seed_data/pages-data');
 const savedData = require('../seed_data/saved-data');
 const userData = require('../seed_data/users-data');
+const finishData = require('../seed_data/finish-data');
+const transcriptData = require('../seed_data/transcript-data');
 
 exports.seed = function (knex) {
   return knex('chapters')
@@ -34,6 +36,18 @@ exports.seed = function (knex) {
     })
     .then(() => {
       return knex('users').insert(userData)
+    })
+    .then(() => {
+      return knex('finishData').del()
+    })
+    .then(() => {
+      return knex('finishData').insert(finishData)
+    })
+    .then(() => {
+      return knex('transcripts').del()
+    })
+    .then(() => {
+      return knex('transcripts').insert(transcriptData)
     })
     .then(() => {
       return knex('saved').del()

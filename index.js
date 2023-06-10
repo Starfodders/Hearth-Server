@@ -27,7 +27,7 @@ app.use(cors(
     { origin: CLIENT_URL }
 ));
 app.use(express.json())
-app.use(express.static('public'))
+// app.use(express.static('public'))
 
 app.use('/users', userRoutes)
 app.use('/chapters', chapterRoutes)

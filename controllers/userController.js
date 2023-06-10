@@ -82,7 +82,7 @@ exports.login = async (req, res) => {
 exports.checkNew = async (req, res) => {
   try {
     const user = await knex("users").where({ id: req.params.userID }).first();
-    console.log(user);
+    // console.log(user);
     return res
       .status(200)
       .json({

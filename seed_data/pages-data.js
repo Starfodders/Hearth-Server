@@ -428,7 +428,7 @@ module.exports = [
         content: "What is important to you in life? It's easy to forget the things that give our lives meaning and importance. By remembering and rediscovering your values, you can better tolerate overwhelming situations. This Valued Living Questionnaire is a checklist to separate the different components of your life. Completing it the first time, answer each row based on their important to you ideally. For example, if you value self-care greatly, you can rate it higher such as a 10.;Then during your second time completing this questionnaire, answer based on the actual time and effort you put towards each aspect of your life. Compare the two results. If there is a great difference between your ideal value versus your actual committment, this may indicate you need to reprioritize your time and effort.",
         can_save: true,
         transcript: false,
-        links: '/valued-living',
+        links: 'valued-living',
         unit_id: 7
     },
     {

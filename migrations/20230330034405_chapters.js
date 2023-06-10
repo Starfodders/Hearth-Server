@@ -3,10 +3,10 @@ exports.up = function (knex) {
     .createTable("chapters", (table) => {
       table.increments("id").primary();
       table.string("name").notNullable();
-      table.integer("units")
+      table.integer("units");
       table.integer("units__done").defaultTo(0);
       table.boolean("overall_available");
-      table.boolean('available').defaultTo(false)
+      table.boolean("available").defaultTo(false);
       table.string("images");
     })
     .createTable("sections", (table) => {
@@ -14,8 +14,8 @@ exports.up = function (knex) {
       table.string("name").notNullable();
       table.string("images");
       table.boolean("completed").defaultTo(false);
-      table.string('title');
-      table.integer("units").defaultTo(0)
+      table.string("title");
+      table.integer("units").defaultTo(0);
       table.boolean("available");
       table
         .integer("chapter_id")
@@ -31,7 +31,7 @@ exports.up = function (knex) {
       table.increments("id").primary();
       table.string("name").notNullable();
       table.string("images");
-      table.string('title')
+      table.string("title");
       table.boolean("available");
       table.boolean("completed");
       table
@@ -47,12 +47,12 @@ exports.up = function (knex) {
     .createTable("pages", (table) => {
       table.increments("id").primary();
       table.integer("page_number").notNullable();
-      table.string("title").defaultTo(null)
-      table.string("type").defaultTo('text');
+      table.string("title").defaultTo(null);
+      table.string("type").defaultTo("text");
       table.text("content").notNullable();
       table.text("transcript", "mediumtext").defaultTo(null);
-      table.boolean('audio').defaultTo(false);
-      table.text("list", "mediumtext").defaultTo(null)
+      table.boolean("audio").defaultTo(false);
+      table.text("list", "mediumtext").defaultTo(null);
       table.boolean("seen").defaultTo(false);
       table.boolean("can_save").notNullable();
       table.string("images").defaultTo(null);
@@ -73,7 +73,7 @@ exports.up = function (knex) {
       table.string("email").notNullable();
       table.string("password").notNullable();
       table.timestamps(true, true);
-      table.boolean('newbie').defaultTo(true);
+      table.boolean("newbie").defaultTo(true);
       table.integer("units_done").defaultTo(0);
       table.integer("times_meditate").defaultTo(0);
       table.float("elapsed_meditate_time").defaultTo(0);
@@ -105,12 +105,25 @@ exports.up = function (knex) {
         .onUpdate("CASCADE")
         .onDelete("CASCADE");
       table.integer("current_progress").defaultTo(0);
+    })
+    .createTable("finishData", (table) => {
+      table.increments("id").primary();
+      table.string("content").notNullable();
+      table.string("image");
+      table.string("caption");
+    })
+    .createTable("transcripts", (table) => {
+      table.integer("id").primary();
+      table.text("content", "mediumtext");
+      table.string("audio").defaultTo(null);
     });
 };
 
 exports.down = function (knex) {
   return knex.schema
-    .dropTable('users')
+    .dropTable("finishData")
+    .dropTable("transcripts")
+    .dropTable("users")
     .dropTable("pages")
     .dropTable("units")
     .dropTable("sections")
