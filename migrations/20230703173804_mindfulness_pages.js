@@ -317,7 +317,10 @@ exports.up = function (knex) {
           audio: null,
         },
       ]);
-    });
+    })
+    .then(() => {
+        return knex('chapters').where('id', 3).update({units: 8})
+    })
 };
 
 exports.down = function (knex) {
@@ -337,5 +340,8 @@ exports.down = function (knex) {
       return knex("transcripts")
         .whereIn("id", [85, 86, 87, 88, 90, 91, 92, 93, 94])
         .del();
-    });
+    })
+    .then(() => {
+        return knex('chapters').where('id', 3).update({units: null})
+    })
 };
