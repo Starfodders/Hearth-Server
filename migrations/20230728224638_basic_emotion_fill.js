@@ -7,6 +7,7 @@ exports.up = function(knex) {
         title: null,
         type: 'special',
         content: "Welcome to Emotional Regulation! For this chapter, you’ll be joined by Edo, a fiery companion who was always focused on the task at hand and had forgotten to care for his emotional side.;Join Edo on his adventure to learn about more about emotions and how they affect him on a day to day basis.",
+        images: 'edoPrompt',
         can_save: false,
         unit_id: 19
     },
@@ -328,7 +329,7 @@ exports.up = function(knex) {
         title: "Emotion Log",
         type: 'text',
         content: "Before we move onto the next technique, we need to begin keeping a record of the emotions we experience. Using the external resource link, create a copy of the |emotion |log and write down the emotions you experience over a week.;Consider the date the emotion occurred, what caused it, and what you did to cope. ",
-        link: 'emotion_log2',
+        links: 'emotion_log2',
         can_save: true,
         unit_id: 22
     },
@@ -389,8 +390,8 @@ exports.up = function(knex) {
         unit_id: 23
     },
     {
-        id: 175,
-        page_number: 175,
+        id: 176,
+        page_number: 176,
         title: "Opposite Action Steps",
         type: 'technique',
         content: "Taking the opposite action is not about avoiding your emotion, but about |regulating your emotion. You acknowledge it’s presence and take steps to reduce it or encourage a new emotion.;Below are the steps you should take to create opposite action.",
@@ -399,8 +400,8 @@ exports.up = function(knex) {
         unit_id: 23
     },
     {
-        id: 176,
-        page_number: 176,
+        id: 177,
+        page_number: 177,
         title: null,
         type: 'text',
         content: "After considering the steps in the previous technique, reference the external resource link: Opposite Action Planning Worksheet. Think about your own emotions that come up frequently and create strategies to regulate them.",
@@ -409,8 +410,8 @@ exports.up = function(knex) {
         unit_id: 23
     },
     {
-        id: 177,
-        page_number: 177,
+        id: 178,
+        page_number: 178,
         title: "Problem Solving",
         type: 'technique',
         content: "We should consider the events that can lead up to a specific emotion, thinking of ways to prevent it from occurring altogether. Use |Behaviour |Analysis and the external resource link to access the worksheet to identify events that can trigger an emotion.;The key here is knowing you can soften an overwhelming emotion by changing what you do |before the emotion washes over you.;After completing the worksheet, review it to determine which events you wish to alter. Only choose events that you have control over and ones that by altering them, you will see a reduction in your problematic emotion.",
@@ -419,8 +420,8 @@ exports.up = function(knex) {
         unit_id: 23
     },
     {
-        id: 178,
-        page_number: 178,
+        id: 179,
+        page_number: 179,
         title: "ABC Problem Solving",
         type: 'technique',
         content: "This is a follow up to the Behaviour Analysis worksheet. You will learn the ABCs of problem solving: |Alternatives, |Best |Ideas, and |Commitment |to |implementation.;Considering the precipitating or secondary thoughts or behaviours noted in the previous worksheet, what are some alternative responses? Brainstorm as many as you can!;Next, review what you had come up with and choose one to two of the best ideas.;Identify specific times and places where you’ll implement your chosen best idea(s) instead of engaging in the problematic thoughts or behaviours.",
@@ -428,8 +429,8 @@ exports.up = function(knex) {
         unit_id: 23
     },
     {
-        id: 179,
-        page_number: 179,
+        id: 180,
+        page_number: 180,
         title: "Weekly Regulator",
         type: 'text',
         content: "Having a way to keep track of your progress is an important piece of feedback. The Weekly Regulator is a checklist of pre-defined goals that you’ll evaluate if you had or had not completed each day of the week. Access this worksheet at the external resource link. As you become more proficient, you can create your own checklist.",
@@ -494,7 +495,7 @@ exports.up = function(knex) {
 };
 
 exports.down = function(knex) {
-  return knex('pages').whereIn('id', [136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179]).del()
+  return knex('pages').whereIn('id', [136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180]).del()
   .then(() => {
     return knex('finishData').whereIn('id', [19, 20, 21, 22, 23]).del()
   })
