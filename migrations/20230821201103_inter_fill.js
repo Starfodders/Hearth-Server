@@ -3,7 +3,7 @@ exports.up = function(knex) {
   return knex('pages').insert([
     {
         id: 181,
-        page_num: 181,
+        page_number: 181,
         title: null,
         type: 'special',
         content: 'Welcome to Interpersonal Effectiveness! Joining you for this chapter will be |Igo and |Ewa, two twins who are hurriedly heading to the Hearth but need to learn some skills to work with one another. After all, relationships are precious things!',
@@ -13,7 +13,7 @@ exports.up = function(knex) {
     },
     {
         id: 182,
-        page_num: 182,
+        page_number: 182,
         title: null,
         type: 'text',
         content: 'Relationships are highly valuable to the quality of our lives, but are vulnerable. They bring |love, |companionship, and |support yet in a matter of moments can become broken beyond repair. That is why in this chapter we will learn important |interpersonal (meaning the relationships or communications between people) skills to keep these relationships alive and healthy.',
@@ -22,7 +22,7 @@ exports.up = function(knex) {
     },
     {
         id: 183,
-        page_num: 183,
+        page_number: 183,
         title: null,
         type: 'summary',
         content: 'The most important skill in Interpersonal Effectiveness is |assertiveness which is |asking for what you want, saying |no, and negotiating conflicts |without |damaging the relationship. But before we learn this, we must learn a few other key points.',
@@ -31,7 +31,7 @@ exports.up = function(knex) {
     },
     {
         id: 184,
-        page_num: 184,
+        page_number: 184,
         title: 'Mindful Attention',
         type: 'text',
         content: "Relationships require attention, whether its romantic or platonic. A good relationship depends on |noticing the other person’s feelings and reactions and then watching the communication process between you.;You can use the skills learnt from Mindfulness to remain in the moment which allows you to actively use your senses to respond to situations. This attention also helps prevent conflict as you gain more time to understand and clarify any misconceptions. This attention also involves watching your own reactions and emotions to prevent any distress.",
@@ -40,7 +40,7 @@ exports.up = function(knex) {
     },
     {
         id: 185,
-        page_num: 185,
+        page_number: 185,
         title: 'Mindful Attention Steps',
         type: 'technique',
         content: "Cultivating your mindful attention is important to recognize the state of your relationships and read any signals between you and others. During the next conversation you have, practice being an |observer and attend to the other person’s physical and verbal behaviour. Is there anything they say or do that is hard to read? Ask a question to clarify!;How are you feeling? Are you doing okay?;How are we doing? Are we okay?;How are things between us?;I notice (insert observation), is that accurate?;Is everything okay with you? With us?;Also notice your own needs and feelings in the interaction and if you need to communicate them to be understood.",
@@ -50,7 +50,7 @@ exports.up = function(knex) {
     },
     {
         id: 186,
-        page_num: 186,
+        page_number: 186,
         title: 'Compassion for Others',
         type: 'text',
         content: 'As you learned in previous chapters, to show compassion is to recognize a person’s |pain and offer |them help without judgment. In many ways, pain and suffering unite all human beings because it is an inevitable experience.;To develop a compassionate attitude is to recognize we are all trying our best in this life, despite the pain and suffering, and using whatever coping skills are available. Yet we often judge others for behaving differently than how we think they |should be performing. Or we judge them in behaving in a disagreeable manner.',
@@ -59,7 +59,7 @@ exports.up = function(knex) {
     },
     {
         id: 187,
-        page_num: 187,
+        page_number: 187,
         title: 'Other-Compassion Meditation',
         type: 'text',
         content: "How often do you stop and think of what that individual may be struggling with? By extending your compassion towards all people-including ones you don’t like-you learn to let go of judgments and their related negative emotions. You learn to open your heart and mind to other possibilities and potentially develop stronger connections with people.;Consider the technique below to build this compassion. Start with |mindful |breathing to help you relax and focus.;Incorporate this meditation into your |still |mind practice and try to incorporate the same intentions into your daily interactions with other people.",
@@ -68,7 +68,7 @@ exports.up = function(knex) {
     },
     {
         id: 188,
-        page_num: 188,
+        page_number: 188,
         title: null,
         type: 'text',
         content: "Our behaviour can be passive or aggressive at times and skewing too much in one direction can lead to ineffective patterns that can jeopardize your relationships.",
@@ -77,7 +77,7 @@ exports.up = function(knex) {
     },
     {
         id: 189,
-        page_num: 189,
+        page_number: 189,
         title: 'Passive Behaviour',
         type: 'text',
         content: "Being passive can seem safe because you go along with what others want. In the long term, remaining passive leads to |giving |in to other people’s desires and |abandoning your own needs, creating frustration and resentment that builds up inside of you. Eventually, this pain can cause you to leave the relationship.;The irony is that in the short term, being passive can seem to protect the relationship. This will lead to a dynamic that is unsustainable.",
@@ -86,7 +86,7 @@ exports.up = function(knex) {
     },
     {
         id: 190,
-        page_num: 190,
+        page_number: 190,
         title: 'Aggressive Behaviour',
         type: 'text',
         content: "Being aggressive can push others away. It is founded on two false beliefs.;The first is a strong sense of how things |should be according to your |own opinion. Your sense of right and wrong dictates how you think others should behave and when they do not act appropriately in a situation, you feel like you need to punish them.;The second source is a need for |control. Things have to go a certain way and you expect certain outcomes to happen or not happen. When these expectations are violated, you grow angry and try to apply more pressure to regain control.",
@@ -95,7 +95,7 @@ exports.up = function(knex) {
     },
     {
         id: 191,
-        page_num: 191,
+        page_number: 191,
         title: 'Which Type Are You?',
         type: 'list',
         content: "Both passivity and aggression can destroy relationships and lead to a painful life. Igo and Ewa fluctuate on which type of behaviour they can display. They wonder which type are you?;See if any of the below apply to you.",
@@ -106,7 +106,7 @@ exports.up = function(knex) {
     },
     {
         id: 192,
-        page_num: 192,
+        page_number: 192,
         title: 'I Want-They Want Ratio',
         type: 'text',
         content: "Relationships consist of two people trying to get what they need. Sometimes it can be the same thing, whether it is companionship, recreation, calm, and quiet, sharing a common interest makes the relationship easy.;When one person wants something the other doesn’t want to give, that’s where conflict arises. To succeed, you will need to be able to:;Know and say what you desire.;Notice or find out what the other person desires.;Negotiate and compromise so you can get at least some of what you want.;Give what you can of what the other person wants.;Think about your relationship with one individual. Think about what you want and how well it is achieved. Now think about what they want and how much of that is achieved.",
@@ -115,7 +115,7 @@ exports.up = function(knex) {
     },
     {
         id: 193,
-        page_num: 193,
+        page_number: 193,
         title: 'I Want-They Want Ratio',
         type: 'list',
         content: "I Want-I Should Ratio. This is the balance of seeking what you |want to do and doing what you |should do in a relationship. If your focus is directed only towards getting what you want, then you will earn |resentment from the other. Conversely, if you only focus on doing what you should be doing, the relationship will feel like a |joyless |burden.;Prioritizing what you should be doing may lead to you ignoring important personal needs. This can lead to pain or desperation.;Igo and Ewa have a list for you to consider. The more on the list that applies to you or that you agree with, the more likely you are to |deny your own needs in a relationship.",
@@ -126,7 +126,7 @@ exports.up = function(knex) {
     },
     {
         id: 194,
-        page_num: 194,
+        page_number: 194,
         title: 'Skill Building',
         type: 'text',
         content: "The previous unit was identifying potential problems in your interpersonal behaviours. Developing the skills to improve them will be hard, but valuable work. We will go over some key interpersonal skills next that will change how you feel about your relationships and help you solve significant problems.",
@@ -135,7 +135,7 @@ exports.up = function(knex) {
     },
     {
         id: 195,
-        page_num: 195,
+        page_number: 195,
         title: 'Six Skills (pt. 1)',
         type: 'text',
         content: "The first skill is |knowing |what |you |want. Pay attention to your desires, you discomforts and look for a way, in your mind, to describe them.;|Asking |for |what |you |want |in |a |way |that |protects |the |relationship is the second skill. Put your needs into words that are clear and without attacking the individual, ask for specific behavioural change(s).;The third skill is |negotiating |conflicting |wants. This draws on the ability to compromise so that each person gets to meet their needs. It assumes each person’s needs are valid and understandable.",
@@ -144,7 +144,7 @@ exports.up = function(knex) {
     },
     {
         id: 196,
-        page_num: 196,
+        page_number: 196,
         title: 'Six Skills (pt. 2)',
         type: 'text',
         content: "The fourth skill is |getting |information. This is a crucial skill that deserves its own slide. This involves gathering knowledge on what the person |needs, |fears, |hopes |for, and other relevant information.;This skill can be impeded by several barriers. We can |falsely |assume what the other person wants. We can |project our own fears, needs and feelings onto the other person. We |fear coming off as nosy and are prying into their personal lives. We |fear hearing something we do not want to hear. We |don’t |know how to ask what it is we are looking for.",
@@ -153,7 +153,7 @@ exports.up = function(knex) {
     },
     {
         id: 197,
-        page_num: 197,
+        page_number: 197,
         title: 'Six Skills (pt. 3)',
         type: 'text',
         content: "The fifth step is learning how to |say |no |in |a |way |that |protects |the |relationship. You can say no in a passive way that can be overridden. You can say no in an aggressive way that alienates people. Or you can say no in an |assertive way that validates their needs while setting firm boundaries about what you will or won’t do.;The sixth skill is |acting |according |to |your |values. Ask yourself what kind of relationships do you want? By acting in accordance with your values, you manifest the relationships you want through your interactions with others. You also lose meaningless relationships that are unhealthy and unaligned with your values.",
@@ -162,7 +162,7 @@ exports.up = function(knex) {
     },
     {
         id: 198,
-        page_num: 198,
+        page_number: 198,
         title: null,
         type: 'summary',
         content: "The six skills of building healthy interpersonal relationships are: 1. |knowing |what |you |want. 2. |asking |for |what |you |want |in |a |way |that |protects |the |relationship. 3. |negotiating |conflicting |wants. 4. |getting |information. 5. saying |no |in |a |way |that |protects |the |relationship. 6. |acting |according |to |your |values.",
@@ -171,7 +171,7 @@ exports.up = function(knex) {
     },
     {
         id: 199,
-        page_num: 199,
+        page_number: 199,
         title: null,
         type: 'text',
         content: "The next few pages will go over the potential blocks to properly using these new interpersonal skills.",
@@ -180,7 +180,7 @@ exports.up = function(knex) {
     },
     {
         id: 200,
-        page_num: 200,
+        page_number: 200,
         title: 'Old Habits of the Aggressive Kind',
         type: 'list',
         content: "We model our behaviours after the environments and role models we had early in our development. If members of your family dealt with conflict using |anger, |blame, or |withdrawal, these are the skills you may have picked up as well.;Igo and Ewa will go over some of these |aversive |strategies, skills you may be using currently to resolve interpersonal problems.;If you find any of these applicable to yourself, ask yourself how these behaviours impact your relationships and whether you want to change them?",
@@ -191,7 +191,7 @@ exports.up = function(knex) {
     },
     {
         id: 201,
-        page_num: 201,
+        page_number: 201,
         title: 'Old Habits of the Passive Kind',
         type: 'text',
         content: "As covered previously, being passive in what you want may appear to have short term benefits in the relationship, but can lead to burnout through the denial of your own needs.;To stop passive behaviour, observe it closely. Ask yourself when was the last time you gave up something you wanted to do to appease somebody else? How did this impact the relationship? How did this make you feel?;Use the external resource link to access the |conflict |log where you can reflect on both passive and aggressive behaviour. ",
@@ -201,7 +201,7 @@ exports.up = function(knex) {
     },
     {
         id: 202,
-        page_num: 202,
+        page_number: 202,
         title: 'Overwhelming Emotion',
         type: 'list',
         content: "When we experience overwhelming emotion, this can impede our best intentions or plans and lead to actions you would not take normally. A potential |dissociative |fugue state, a state of anger where you act and upon later reflection, these actions seem to have been done by somebody else. Your interpersonal skills being overwritten by emotional distress, leading to potential emotional or physical harm to others.;It is important to identify |red |flags in yourself that correspond to feelings or behaviours that can signal a loss of control. If you notice these red flags, implement mindful breathing exercises or other distress tolerance skills to deescalate your emotions. Igo and Ewa have some examples of signals.",
@@ -212,7 +212,7 @@ exports.up = function(knex) {
     },
     {
         id: 203,
-        page_num: 203,
+        page_number: 203,
         title: 'Fear',
         type: 'technique',
         content: "When you’re afraid, your interpersonal skills take a back seat as you begin to have catastrophic thoughts. What if I’m rejected? What if I lose my job? These thoughts can lead to adverse reactions, aggression, or avoidance of a situation.;Wise mind meditation can help face your fears as well as |fear |management. Using the external resource link, you can access the risk assessment and risk planning of fear management.;The first page is to consider your fears, providing evidence towards why it might occur and why it might not.;The second page is to create plans around a fear actually occurring. If it does, what coping plan will you have in place to manage your distress? What resources, family, friends, or services do you have around you?",
@@ -222,7 +222,7 @@ exports.up = function(knex) {
     },
     {
         id: 204,
-        page_num: 204,
+        page_number: 204,
         title: 'Toxic Relationships',
         type: 'text',
         content: "If you are in a relationship or relationships that are toxic, where others use aversive techniques on you and make interpersonal skills difficult to use, leave the relationship. Distance yourself from these individuals as their behaviour will continuously bring you down and make you feel vulnerable.;In situations where you can’t leave-such as a toxic boss-you should try two things. The first is to |calm |yourself before talking to them, using mindful breathing to centre yourself. The second is to |anticipate |their |behaviours based on previous experience. Predict how this individual will act and prepare a coping strategy to keep yourself from falling into old, ineffective patterns.",
@@ -231,7 +231,7 @@ exports.up = function(knex) {
     },
     {
         id: 205,
-        page_num: 205,
+        page_number: 205,
         title: 'Myths (pt. 1)',
         type: 'text',
         content: "These next few slides will close out Basic Interpersonal Effectiveness and discuss four myths that will paralyze you in a relationship.;The first myth is |there |is |something |wrong |with |me |if |I |have |needs. It is not shameful or wrong to have needs, it is a basic human necessity. We spend our lives trying to get things from others: love, support, help, kindness.;A healthier outlook is |I |have |a |right |to |want |things.",
@@ -240,7 +240,7 @@ exports.up = function(knex) {
     },
     {
         id: 206,
-        page_num: 206,
+        page_number: 206,
         title: 'Myths (pt. 2)',
         type: 'text',
         content: "The second myth is |I |won’t |be |able |to |stand |it |if |the |other |person |says |no. Hearing a refusal is hurtful and contemplating asking for something that can be refused is scary. But is it true that you can’t stand it? Think of the rejections you’ve suffered in your life, you have survived them. Refusals hurt, but living with pain by not being able to ask for what you need is worse.;A healthier outlook is |I |have |a |right |to |want |things |even |if |the |other |person |won’t |give |them.",
@@ -249,7 +249,7 @@ exports.up = function(knex) {
     },
     {
         id: 207,
-        page_num: 207,
+        page_number: 207,
         title: 'Myths (pt. 3)',
         type: 'text',
         content: "The third myth is |it |is |selfish |to |say |no |to |things. Perhaps you grew up with the mentality that your own needs weren’t as important as others. This is false! Your needs are valid too and it is not selfish to set limits. It is healthy and necessary.;A healthy outlook to this myth is |it |is |normal |and |healthy |to |ask |for |things.",
@@ -258,7 +258,7 @@ exports.up = function(knex) {
     },
     {
         id: 208,
-        page_num: 208,
+        page_number: 208,
         title: 'Myths (pt. 4)',
         type: 'text',
         content: "The fourth and final myth the belief that |I |have |no |control |over |things. Control is relative. You can’t control others and there are things in your environment you cannot control either. But you can control your own behaviour. In the past you may have been using ineffective coping strategies which can lead to a feeling of helplessness. Assertive behaviour gets better results, you are heard more often and your boundaries are better respected, resulting in positive interactions.;A healthier outlook is |I |can |choose |to |behave |in |more |effective |ways. ",
@@ -267,7 +267,7 @@ exports.up = function(knex) {
     },
     {
         id: 209,
-        page_num: 209,
+        page_number: 209,
         title: 'Myths and their Better Outlooks',
         type: 'summary',
         content: "The myths you may face are:;1. |there |is |something |wrong |with |me |if |I |have |needs;2. |I |won’t |be |able |to |stand |it |if |the |other |person |says |no;3. |it |is |selfish |to |say |no |to |things.;4.|I |have |no |control |over |things.;The healthier outlooks are:;1. |I |have |a |right |to |want |things.;2. |I |have |a |right |to |want |things |even |if |the |other |person |won’t |give |them.;3. |It |is |normal |and |healthy |to |ask |for |things.;4. |I |can |choose |to |behave |in |more |effective |ways.",
@@ -276,7 +276,7 @@ exports.up = function(knex) {
     },
     {
         id: 210,
-        page_num: 210,
+        page_number: 210,
         title: null,
         type: 'text',
         content: "This section of interpersonal effectiveness will go over specific skills that will help you build and maintain healthy relationships.",
@@ -285,7 +285,7 @@ exports.up = function(knex) {
     },
     {
         id: 211,
-        page_num: 211,
+        page_number: 211,
         title: 'Knowing What You Want',
         type: 'technique',
         content: "Having self-awareness of what you want is the first step to developing successful interpersonal skills. Emotional regulation skills in the previous chapter will teach you how to classify your emotions. Using those skills, think of if the emotion and if it was |good or |bad. Then try to be more specific. If it was good, was the emotion of satisfaction, excitement, love? If it was bad, was the emotion anger, fear, guilt?;Once you can put these emotions into words, you can decide what you want to change about it. Do you want someone to change their behaviour? Do you want something to stop?;Consider the technique below.",
@@ -295,7 +295,7 @@ exports.up = function(knex) {
     },
     {
         id: 212,
-        page_num: 212,
+        page_number: 212,
         title: "Legitimate Rights",
         type: 'text',
         content: "You may experience anxiety bringing up your desires and needs. You are an individual that deserves to be heard, to trouble others with your needs, to disappoint, to annoy, to push others to make an effort for you. This is because you are a human being that feels, yearns, who hurts, and struggles.;Growing up in an unsupportive environment, you may learn to invalidate your own feelings. To remind yourself of your value and importance, consider the external resource link where there is a list of your |legitimate |rights. Read it over and put the rights that empower you the most in an accessible place for you to reference.",
@@ -305,7 +305,7 @@ exports.up = function(knex) {
     },
     {
         id: 213,
-        page_num: 213,
+        page_number: 213,
         title: "Modulating Intensity",
         type: 'text',
         content: "It is important to adjust how you ask for your needs based on the contextual cues. Ask yourself (on a scale from 1 to 10) how |urgent are |your needs? Also ask yourself (on a scale from 1 to 10) how |vulnerable is the other person or the relationship. If your needs are urgent and the relationship is secure, be more forceful in asking for what you need. If your needs are urgent but the relationship is very vulnerable, modulate your intensity to preserve the relationship.",
@@ -314,7 +314,7 @@ exports.up = function(knex) {
     },
     {
         id: 214,
-        page_num: 214,
+        page_number: 214,
         title: "Making a Simple Request",
         type: 'technique',
         content: "The basis for requesting change is a simple request. There is an art to formulating a request that is soft, direct, and can get you the results you desire.;The first step is optional, |justifying |your |request. Offer a simple, short justification for your request, such as ‘it’s too hot in here’ or ‘it’s a long walk’.;The second step is the |softening |statement. This disarms the request, reduce resistance, and paints you as a reasonable person who is polite. These statements are like ‘Would you mind if…’ or ‘I’d appreciate it if you would…’.;The third step is to ask a |direct, |specific |question. Say what you want exactly and clearly, leaving any emotion or blame out of the question.;The fourth step is a |statement |of |appreciation. This increases the likelihood of them saying yes to you, making them feel that what they’re doing for you is valuable. Examples include ‘This will really help me out’, or ‘Thanks for your effort with this’.",
@@ -324,7 +324,7 @@ exports.up = function(knex) {
     },
     {
         id: 215,
-        page_num: 215,
+        page_number: 215,
         title: "The Structure of a Simple Request",
         type: 'summary',
         content: "Offer a short and simple justification. Add a softening statement. State your question in a clear and specific manner. Add a statement of appreciation.",
@@ -333,7 +333,7 @@ exports.up = function(knex) {
     },
     {
         id: 216,
-        page_num: 216,
+        page_number: 216,
         title: null,
         type: 'text',
         content: "This entire unit will cover |assertiveness, a critical skill to maintaining healthy relationships. It is broken into four parts, two basic parts and two optional parts. To learn assertiveness, we will use a |script. A benefit of a script is that you can rehearse it beforehand, either by yourself or with another person. When it is needed, you can deliver it with greater confidence.",
@@ -342,7 +342,7 @@ exports.up = function(knex) {
     },
     {
         id: 217,
-        page_num: 217,
+        page_number: 217,
         title: 'Assertive Statement 1 - I Think',
         type: 'list',
         content: "This first component focuses on the |facts and your |understanding of what’s going on. It should not include judgments or assumptions about the other person’s motives. It should not in any way attack. “I think” is a clear description of events and experiences that you need to talk about-and perhaps change.;Igo and Ewa have some examples.",
@@ -353,7 +353,7 @@ exports.up = function(knex) {
     },
     {
         id: 218,
-        page_num: 218,
+        page_number: 218,
         title: 'Assertive Statement 2 - I Feel (optional)',
         type: 'list',
         content: "This component is optional because you’re likely to use this statement with people you’re close with, not with an acquaintance or someone you’ve just met. The purpose is to give a |brief, |nonjudgmental |description of any |emotion triggered by the situation. This is about you and your particular feelings and any sentence about your emotions should start with “I”.;Igo and Ewa have some examples of these statements.",
@@ -364,7 +364,7 @@ exports.up = function(knex) {
     },
     {
         id: 219,
-        page_num: 219,
+        page_number: 219,
         title: null,
         type: 'text',
         content: "A warning when using |I |Feel assertive statements is to not start the sentence with the word |”you”. This leads to blame and accusation which leads to the other person feeling defensive.;Some examples are:; You’re hurting me.;You don’t care about us.;You’re always late.",
@@ -373,7 +373,7 @@ exports.up = function(knex) {
     },
     {
         id: 220,
-        page_num: 220,
+        page_number: 220,
         title: null,
         type: 'text',
         content: "Another warning is that you can dress up |”you” statements to look like |”I” statements. This can lead to sentence structures that appear as ”I feel that you…”.;Some examples are:;I feel that you’re selfish.;I feel that you manipulate me.",
@@ -382,7 +382,7 @@ exports.up = function(knex) {
     },
     {
         id: 221,
-        page_num: 221,
+        page_number: 221,
         title: null,
         type: 'summary',
         content: "Using the word “you” when expressing your own feelings may feel safer to you as it makes you less vulnerable. However, it forms a judgmental statement that only carries blame and makes the listener less likely to hear what you want.",
@@ -391,7 +391,7 @@ exports.up = function(knex) {
     },
     {
         id: 222,
-        page_num: 222,
+        page_number: 222,
         title: 'Assertive Statement 3 - I Want',
         type: 'text',
         content: "This component is the second of the basic parts as it delivers a hopeful resolution to your need. Here are some guidelines to follow.;|Ask |for |behavioural, |not |attitudinal |change. You can’t expect someone to change their thoughts and beliefs based on your own preferences, but you can ask them to change their behaviour and how they act.;|Ask |for |one |change |at |a |time. Don’t give the listener a lot of requested changes at once, it can lead to them feeling overwhelmed or pressured.;|Ask |for |something |that |can |be |changed |now. Choosing a target of your assertiveness in the near future will make it much more tangible than something weeks or months later.;|Be |specific |and |concrete. Be less vague with your needs and paint a clear picture to the listener of what you want and when you want it.",
@@ -400,7 +400,7 @@ exports.up = function(knex) {
     },
     {
         id: 223,
-        page_num: 223,
+        page_number: 223,
         title: 'Assertive Statement 4 - Self-Care (optional)',
         type: 'list',
         content: "This last component is also optional and only involves telling the other person what you will do if they do not comply with your request. It is |not |threatening or |punishing in any way. It is to |provide |information and show that you are not helpless, that you have a plan to solve the problem. It is to protect your own rights and self-interests.;Igo and Ewa have some examples of self-care statements.",
@@ -411,7 +411,7 @@ exports.up = function(knex) {
     },
     {
         id: 224,
-        page_num: 224,
+        page_number: 224,
         title: null,
         type: 'summary',
         content: "Think to yourself some problems that exist in your life and what you want changed for each specifically. Now turn them into scripts! Using the four assertive statements you just learned, break each problem and need into what you think, how you feel, what you want, and how you’ll take care of yourself.",
@@ -420,7 +420,7 @@ exports.up = function(knex) {
     },
     {
         id: 225,
-        page_num: 225,
+        page_number: 225,
         title: 'Assertive Listening',
         type: 'text',
         content: "Listening is an active process that requires commitment to fully understand what the other person thinks and feels about the problem. If you ever feel |uncertain about what the other person feels or wishes, ask them a |direct question to get them to elaborate further.;”I’m not really sure how you feel about that, could you tell me more?”;Ask these key questions to find better solutions or compromises.;What is the central problem as you understand it?;How do you make sense of what is happening?;When you’re struggling with (problem), how does it make you feel?;When you’re dealing with (problem), what does it make you want to do?;What do you think needs to change?;What would you like me to do to help with this?",
@@ -429,7 +429,7 @@ exports.up = function(knex) {
     },
     {
         id: 226,
-        page_num: 226,
+        page_number: 226,
         title: null,
         type: 'text',
         content: "Assertive listening is extremely valuable, but remember your own needs. Just because you found out what someone else needs does not mean you have to give it to them. Consider what is important to you as well!",
@@ -438,7 +438,7 @@ exports.up = function(knex) {
     },
     {
         id: 227,
-        page_num: 227,
+        page_number: 227,
         title: 'Blocks to Listening',
         type: 'list',
         content: "These are a few barriers that people may experience that can |sabotage their listening abilities. Ewa and Igo can’t wait to share!",
@@ -449,7 +449,7 @@ exports.up = function(knex) {
     },
     {
         id: 228,
-        page_num: 228,
+        page_number: 228,
         title: 'Saying No',
         type: 'technique',
         content: "Being able to say no is crucial to healthy communication and gives you more control what happens to you. It is both simple to say but hard to do because it takes courage to say them.;Start by validating the other person’s needs. If they wish to do something and what your input, start by seeing where they are coming from and acknowledging it.;Then state a clear preference to not do it. Use keywords |”I’d |prefer” or |”I’m |not |comfortable” to decline their request.;The external resource link gives access to the |Assertive |Situation |Hierarchy. List 10 situations in your life where you want to make a change or set limits on. List them in order from 1-10, with 1 being the least challenging and 10 being the most. Then starting with the bottom four (1-4), use the assertive script from last unit to create a script to address your needs and also to learn how to say no. Rehearse the script, identify a time and place you want to use it, and make a commitment to using your script on that date. ",
@@ -460,7 +460,7 @@ exports.up = function(knex) {
     },
     {
         id: 229,
-        page_num: 229,
+        page_number: 229,
         title: 'Coping with Resistance and Conflict',
         type: 'text',
         content: "The next few slides involve five different conflict management skills you can implement if someone is not listening to |you.",
@@ -469,7 +469,7 @@ exports.up = function(knex) {
     },
     {
         id: 230,
-        page_num: 230,
+        page_number: 230,
         title: 'Mutual Validation',
         type: 'text',
         content: "When people feel invalidated, they tend to not listen to you. In an effort to feel heard, they double down on their own arguments and assertions. Using mutual validation, you show the other person that you see their point of view using “I understand” statements. Then you use “On my end” to assert your own point of view. This way you can acknowledge and validate both of your experiences.",
@@ -478,7 +478,7 @@ exports.up = function(knex) {
     },
     {
         id: 231,
-        page_num: 231,
+        page_number: 231,
         title: 'Broken Record',
         type: 'text',
         content: "When someone is not getting your message, you can formulate a short, specific, easy to understand statement that encompasses what you want. Offer no explanations, speak in a firm voice, and repeat the statement as many times as necessary with minimal variation. Don’t argue, don’t get angry, don’t try to debate, don’t answer why questions. Just be polite and clear, like a broken record.",
@@ -487,7 +487,7 @@ exports.up = function(knex) {
     },
     {
         id: 232,
-        page_num: 232,
+        page_number: 232,
         title: 'Probing',
         type: 'text',
         content: "The key phrase is “What is it about (the situation) that bothers you?”. Continue to ask this phrase, inserting the relevant situation, until you get down to the core issue or something that is useful to resolve.;An example is repeatedly asking a peer that has accused you of being lazy what it is about your work ethic that bothers them? Continue to ask, digging deeper until they acknowledge the root concern which is someone else having to pick up your responsibilities.",
@@ -496,7 +496,7 @@ exports.up = function(knex) {
     },
     {
         id: 233,
-        page_num: 233,
+        page_number: 233,
         title: 'Clouding',
         type: 'text',
         content: "This is to partially agree with someone without accepting the entirety of their statement. This acceptance of responsibility helps calm people down and stops the game of who has more wins or losses.;Find some part of what the person is saying that you can accept, acknowledge that the person is correct about that, and ignore the rest of their argument.;An example is someone being accusatory of you for being mad over everything, and you clouding the statement, accepting that there are times that you can become irritated.",
@@ -505,7 +505,7 @@ exports.up = function(knex) {
     },
     {
         id: 234,
-        page_num: 234,
+        page_number: 234,
         title: 'Assertive Delay',
         type: 'text',
         content: "This is the method of allowing time between decisions to make more reasonable, healthy choices. You may find yourself being pressured into making a choice or agree with something. You can take minutes, or even hours to excuse yourself and consider carefully what is being said before making a sound decision.",
@@ -514,7 +514,7 @@ exports.up = function(knex) {
     },
     {
         id: 235,
-        page_num: 235,
+        page_number: 235,
         title: 'How to Negotiate',
         type: 'text',
         content: "First begin by understanding both positions have |valid needs. Using the |RAVEN guideline, you will be on the right track when negotiating.;R stands for |Relax. Accept conflict calmly. Take a deep breath before speaking and release tension as you exhale.;A stands for |Avoid |the |aversive. Keep in mind the aversive strategies you might be tempted to use and monitor what you say to avoid them.;V stands for |Validate |their |needs. Focus on a fair, mutually agreeable outcome where both people can get some of their needs met.;E stands for |Examine |your values. How do you want to be treated in a relationship and how do you want to treat others?;N stands for |Neutral |voice. Keep anger and contempt out of your voice.;With these guidelines in mind, begin negotiating by taking turns and offering solutions.",
@@ -523,7 +523,7 @@ exports.up = function(knex) {
     },
     {
         id: 236,
-        page_num: 236,
+        page_number: 236,
         title: 'RAVEN guidelines',
         type: 'summary',
         content: "Relax, Avoid the Aversive, Validate their Needs, Examine your Values, Neutral Voice.",
@@ -532,7 +532,7 @@ exports.up = function(knex) {
     },
     {
         id: 237,
-        page_num: 237,
+        page_number: 237,
         title: 'Compromises',
         type: 'list',
         content: "After negotiating, if neither of you are able to come up with an agreeable solution, here are a few ideas for |compromises.",
@@ -543,7 +543,7 @@ exports.up = function(knex) {
     },
     {
         id: 238,
-        page_num: 238,
+        page_number: 238,
         title: 'Analyze Problem Interactions',
         type: 'technique',
         content: "When communications inevitably go wrong, you will need to analyze what had occurred. The key is to learn from your mistakes and polish your skills.;Using the external resource link, refer to the |communications |effectiveness |checklist. This is a great starting point to identify problem areas you wish to work on. Create a specific plan to address your behaviour the next time. Start small as small changes lead to big improvements!",
