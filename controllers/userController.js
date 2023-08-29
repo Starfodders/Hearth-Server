@@ -2,7 +2,6 @@ const knex = require("knex")(require("../knexfile"));
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 
-
 exports.signup = async (req, res) => {
   const { given_name, email, password } = req.body;
 
@@ -83,13 +82,11 @@ exports.checkNew = async (req, res) => {
   try {
     const user = await knex("users").where({ id: req.params.userID }).first();
     // console.log(user);
-    return res
-      .status(200)
-      .json({
-        isNew: user.newbie,
-        progress: user.chapter,
-        currentUnitToNav: user.unit,
-      });
+    return res.status(200).json({
+      isNew: user.newbie,
+      progress: user.chapter,
+      currentUnitToNav: user.unit,
+    });
   } catch (err) {
     console.log(err);
     res.status(404).json({ message: "No user found" });
@@ -145,33 +142,42 @@ exports.update = async (req, res) => {
     } else {
       //checks for current progress
       if (getUser.current_progress >= parseInt(unitID)) {
-        return res
-          .status(200)
-          .json({
-            message:
-              "User found but no update provided as current progress is higher than current unit completed",
-          });
+        return res.status(200).json({
+          message:
+            "User found but no update provided as current progress is higher than current unit completed",
+        });
       } else {
-        //if completed unit is newest available, update their progress and unlock access to next unit
-        const getSection = await knex("units")
-          .where({ id: updateUnit })
-          .first();
-        const sectionID = getSection.section_id;
+        //if the user is at the final unit, hard code the final user progress data
+        if (updateUnit === 32) {
+          const finishedUser = await knex("users")
+            .where({ id: userID })
+            .update({
+              current_progress: 31,
+              unit: 31,
+              section: 11,
+              chapter: 6,
+            });
+          return res.status(200).json(finishedUser);
+        } else {
+          //if completed unit is newest available, update their progress and unlock access to next unit
+          const getSection = await knex("units")
+            .where({ id: updateUnit })
+            .first();
+          const sectionID = getSection.section_id;
 
-        const getChapter = await knex("sections")
-          .where({ id: sectionID })
-          .first();
-        const chapterID = getChapter.chapter_id;
+          const getChapter = await knex("sections")
+            .where({ id: sectionID })
+            .first();
+          const chapterID = getChapter.chapter_id;
 
-        const updatedUser = await knex("users")
-          .where({ id: userID })
-          .update({
+          const updatedUser = await knex("users").where({ id: userID }).update({
             current_progress: unitID,
             unit: updateUnit,
             section: sectionID,
             chapter: chapterID,
           });
-        return res.status(200).json(updatedUser);
+          return res.status(200).json(updatedUser);
+        }
       }
     }
   } catch (error) {
