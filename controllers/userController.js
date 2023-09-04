@@ -78,10 +78,34 @@ exports.login = async (req, res) => {
   }
 };
 
+exports.exists = async (req, res) => {
+  const { email } = req.body;
+  if (!email.length) {
+    return res.status(400).json({ message: "No email entered" });
+  }
+  try {
+    const checkUserExist = await knex("users").where({ email: email });
+    if (checkUserExist.length > 0) {
+      return res
+        .status(404)
+        .json({ message: "Email is invalid or already taken" });
+    } else {
+      return res
+        .status(200)
+        .json({
+          message: "User is clear to create an account with this email",
+        });
+    }
+  } catch (err) {
+    return res
+      .status(500)
+      .json({ message: err + ` unable to query DB if email exists` });
+  }
+};
+
 exports.checkNew = async (req, res) => {
   try {
     const user = await knex("users").where({ id: req.params.userID }).first();
-    // console.log(user);
     return res.status(200).json({
       isNew: user.newbie,
       progress: user.chapter,

@@ -5,6 +5,8 @@ const userController = require('../controllers/userController')
 router.route('/signup').post(userController.signup)
 router.route('/login').post(userController.login)
 
+router.route('/exists').post(userController.exists)
+
 router.route('/checkNew/:userID').get(userController.checkNew)
 router.route('/patchNew/:userID').patch(userController.patchNew)
 
